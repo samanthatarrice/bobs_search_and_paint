@@ -89,6 +89,24 @@ h2 {
   right: 44.5%;
 }
 
+.squirrel {
+  width: 6%;
+  bottom: 28%;
+  right: 40%;
+}
+
+.easel2 {
+  width: 17%;
+  bottom: 28%;
+  right: 40%;
+}
+
+.green-painting {
+  width: 12.5%;
+  bottom: 40%;
+  right: 42%;
+}
+
 .easel {
   width: 20%;
   left: 20%;
@@ -107,22 +125,10 @@ h2 {
   bottom: 17%;
 }
 
-.squirrel {
-  width: 6%;
-  bottom: 28%;
-  right: 40%;
-}
-
-.easel2 {
-  width: 17%;
-  bottom: 28%;
-  right: 40%;
-}
-
-.green-painting {
-  width: 12.5%;
-  bottom: 40%;
-  right: 42%;
+.cloud {
+  width: 4%;
+  left: 28%;
+  bottom: 43%;
 }
 
 .palette {
