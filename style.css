@@ -35,14 +35,26 @@ h1 {
   font-size: 4vw;
 }
 
-.canvas {
-  display: none;
-  background-color: white;
+.canvas-background {
+  width: 55vw;
+  height: calc(70vw * (47/70));
   position: absolute;
-  top: 1%;
-  left: 1%;
+  z-index: 3;
+  background: url("images/mountain-coloring-page.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.canvas {
+  /* display: none; */
+  background-color: white;
+  opacity: 40%;
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  z-index: 4;
+  border-radius: 85px/65px;
+}
 
 .main-display {
   position: relative;
@@ -236,6 +248,10 @@ footer {
 @media screen and (min-width: 1200px) {
   h2 {
     font-size: 4vh;
+  }
+
+  .canvas {
+    border-radius: 160px/130px;
   }
 }
 
