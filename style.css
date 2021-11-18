@@ -12,18 +12,18 @@ body {
 }
 
 header {
-  margin: 3rem 0 1rem;
+  margin: 5rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header img {
-  width: 30vw;
+  width: 35vw;
 }
 
 h1 {
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 
 .main-display {
@@ -39,6 +39,7 @@ h1 {
 
 .tv {
   width: 100%;
+  z-index: 1;
 }
 
 .room {
@@ -46,7 +47,7 @@ h1 {
   top: 5%;
   left: 4%;
   width: 80%;
-  z-index: -2;
+  z-index: -3;
 }
 
 .search-wall {
@@ -56,15 +57,31 @@ h1 {
   position: absolute;
   top: 5%;
   right: 18%;
-  z-index: -2;
+  z-index: -1;
+}
+
+.search-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 28%;
+  right: 28%;
+  width: 6.5%;
+  height: 55%;
+}
+
+.search-images img {
+  width: 100%;
 }
 
 .side-wall {
-  height: 83%;
-  top: 9%;
+  height: 81%;
+  top: 9.5%;
   right: 38%;
   width: 10%;
-  z-index: -1;
+  z-index: ;
 }
 
 h2 {
@@ -77,6 +94,7 @@ h2 {
 
 .image {
   position: absolute;
+  z-index: 2;
 }
 
 .shelf {
@@ -94,13 +112,13 @@ h2 {
 .pan {
   width: 8%;
   top: 32%;
-  right: 52%;
+  right: 51.4%;
 }
 
 .squirrel {
   width: 6%;
   bottom: 28%;
-  right: 47%;
+  right: 45%;
 }
 
 .easel2 {
@@ -111,8 +129,14 @@ h2 {
 
 .green-painting {
   width: 12.5%;
-  bottom: 40%;
-  right: 49%;
+  bottom: 40.3%;
+  right: 49.2%;
+}
+
+.tree {
+  width: 3%;
+  bottom: 42%;
+  right: 55%;
 }
 
 .easel {
@@ -124,7 +148,7 @@ h2 {
 .pink-painting {
   width: 13%;
   left: 22.5%;
-  top: 51%;
+  top: 50.7%;
 }
 
 .bob {
@@ -143,5 +167,11 @@ h2 {
   width: 6%;
   bottom: 22%;
   left: 13%;
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 4vh;
+  }
 }
 
