@@ -16,10 +16,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: end;
+  display: relative;
 }
 
 header img {
   width: 35vw;
+}
+
+.apostrophe {
+  font-family: 'Kaushan script', cursive;
+  font-size: 6vw;
+  position: absolute;
+  top: 5%;
+  left: 50%;
 }
 
 h1 {
@@ -171,13 +180,25 @@ h2 {
 }
 
 footer {
-  margin: 3rem;
-  text-align: center;
+  margin: 2rem 0 3rem;
 }
 
-footer p {
-  font-size: 1.5rem;
-  font-weight: bold;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.fab {
+  font-size: 4vw;
+  padding: 1rem;
+}
+
+.name p {
+  font-size: 2vw;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
