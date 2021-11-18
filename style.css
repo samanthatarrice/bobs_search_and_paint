@@ -35,6 +35,15 @@ h1 {
   font-size: 4vw;
 }
 
+.canvas {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+
 .main-display {
   position: relative;
   width: 70%;
@@ -49,6 +58,8 @@ h1 {
 .tv {
   width: 100%;
   z-index: 1;
+  position: relative;
+  /*allows you to change z-index*/
 }
 
 .room {
@@ -193,7 +204,7 @@ footer {
 
 .fab {
   font-size: 4vw;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .name p {
@@ -204,6 +215,7 @@ footer {
 /* MODAL */
 
 .modal-container {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -217,11 +229,9 @@ footer {
   margin: 0 auto;
 }
 
-.canvas {
-  background-color: white;
-  display: block;
-  margin: 25vh auto;
-}
+
+
+
 
 @media screen and (min-width: 1200px) {
   h2 {
