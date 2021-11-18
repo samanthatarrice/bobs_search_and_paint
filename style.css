@@ -120,9 +120,9 @@ h2 {
 }
 
 .pan {
-  width: 8%;
-  top: 32%;
-  right: 51.4%;
+  width: 6.5%;
+  top: 33%;
+  right: 52%;
 }
 
 .squirrel {
@@ -199,6 +199,28 @@ footer {
 .name p {
   font-size: 2vw;
   padding-right: 1rem;
+}
+
+/* MODAL */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.modal {
+  margin: 0 auto;
+}
+
+.canvas {
+  background-color: white;
+  display: block;
+  margin: 25vh auto;
 }
 
 @media screen and (min-width: 1200px) {
