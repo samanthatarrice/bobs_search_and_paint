@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Sue Ellen Francisco', sans-serif;
 }
 
 header {
@@ -21,6 +21,7 @@ header {
 
 header img {
   width: 35vw;
+  padding-right: 2rem;
 }
 
 .apostrophe {
@@ -28,14 +29,15 @@ header img {
   font-size: 6vw;
   position: absolute;
   top: 5%;
-  left: 50%;
+  left: 52%;
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .canvas-background {
+  display: none;
   width: 55vw;
   height: calc(70vw * (47/70));
   position: absolute;
@@ -46,7 +48,7 @@ h1 {
 }
 
 .canvas {
-  /* display: none; */
+  display: none;
   background-color: white;
   opacity: 40%;
   position: absolute;
@@ -98,7 +100,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 28%;
+  top: 26%;
   right: 28%;
   width: 6.5%;
   height: 55%;
@@ -117,11 +119,12 @@ h1 {
 }
 
 h2 {
-  margin: 32% 0;
+  margin: 36% 0;
   width: 60%;
   padding-left: 5%;
   font-size: 2vh;
   text-align: center;
+  line-height: 1.4;
 }
 
 .image {
@@ -246,6 +249,11 @@ footer {
 
 
 @media screen and (min-width: 1200px) {
+  
+  .apostrophe {
+    top: 3%;
+  }
+  
   h2 {
     font-size: 4vh;
   }

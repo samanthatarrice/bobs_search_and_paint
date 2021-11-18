@@ -1,7 +1,5 @@
 const imagesToFind = Array.from(document.querySelectorAll('.find'));
 
-canvas();
-
 imagesToFind.forEach(image => {
   image.addEventListener('click', () => {
     image.style.display = 'none';
@@ -10,12 +8,13 @@ imagesToFind.forEach(image => {
   })
 })
 
-
 function canvas() {
 
   const canvas = document.querySelector(".canvas");
+  const canvasBackground = document.querySelector('.canvas-background');
 
   canvas.style.display = 'block';
+  canvasBackground.style.display = 'block';
   
   canvas.width = window.innerWidth/1.98;
   canvas.height = canvas.width * 0.792;
@@ -24,8 +23,8 @@ function canvas() {
     canvas.width = window.innerWidth/1.98;
     canvas.height = canvas.width * 0.792;
   })
-  canvas.style.zIndex = '4';
-  document.querySelector('.tv').style.zIndex = '3';
+  canvas.style.zIndex = '6';
+  document.querySelector('.tv').style.zIndex = '5';
 
   const ctx = canvas.getContext('2d');
 
