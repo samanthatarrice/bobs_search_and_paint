@@ -15,7 +15,7 @@ header {
   margin: 5rem 0 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 header img {
@@ -81,7 +81,7 @@ h1 {
   top: 9.5%;
   right: 38%;
   width: 10%;
-  z-index: ;
+  /* z-index: ; Not working for some reason...*/
 }
 
 h2 {
@@ -93,6 +93,7 @@ h2 {
 }
 
 .image {
+  display: block;
   position: absolute;
   z-index: 2;
 }
@@ -167,6 +168,16 @@ h2 {
   width: 6%;
   bottom: 22%;
   left: 13%;
+}
+
+footer {
+  margin: 3rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1200px) {
