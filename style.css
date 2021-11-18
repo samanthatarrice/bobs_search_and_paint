@@ -19,11 +19,11 @@ header {
 }
 
 header img {
-  width: 40vw;
+  width: 30vw;
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 .main-display {
@@ -59,6 +59,14 @@ h1 {
   z-index: -2;
 }
 
+.side-wall {
+  height: 83%;
+  top: 9%;
+  right: 38%;
+  width: 10%;
+  z-index: -1;
+}
+
 h2 {
   margin: 32% 0;
   width: 60%;
@@ -74,65 +82,66 @@ h2 {
 .shelf {
   width: 22%;
   top: 35%;
-  left: 20%;
+  left: 18%;
 }
 
 .plant {
   width: 7%;
   top: 29%;
-  left: 25%;
+  left: 23%;
 }
 
 .pan {
   width: 8%;
   top: 32%;
-  right: 44.5%;
+  right: 52%;
 }
 
 .squirrel {
   width: 6%;
   bottom: 28%;
-  right: 40%;
+  right: 47%;
 }
 
 .easel2 {
   width: 17%;
   bottom: 28%;
-  right: 40%;
+  right: 47%;
 }
 
 .green-painting {
   width: 12.5%;
   bottom: 40%;
-  right: 42%;
+  right: 49%;
 }
 
 .easel {
   width: 20%;
-  left: 20%;
+  left: 19%;
   top: 50%;
 }
 
 .pink-painting {
   width: 13%;
-  left: 23.5%;
+  left: 22.5%;
   top: 51%;
 }
 
 .bob {
   width: 23%;
-  left: 8%;
+  left: 7%;
   bottom: 17%;
 }
 
 .cloud {
   width: 4%;
-  left: 28%;
+  left: 27%;
   bottom: 43%;
 }
 
 .palette {
   width: 6%;
   bottom: 22%;
-  left: 14%;
+  left: 13%;
 }
+
