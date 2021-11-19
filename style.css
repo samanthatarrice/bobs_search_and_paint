@@ -25,7 +25,7 @@ header {
   margin: 3rem 0 1rem;
   display: flex;
   justify-content: center;
-  align-items:end;
+  align-items: baseline;
   display: relative;
 }
 
@@ -39,11 +39,12 @@ header img {
   font-size: 5rem;
   position: absolute;
   top: 3%;
-  left: 52%;
+  left: 50%;
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 5vw;
+  line-height: 1;
 }
 
 .main-display {
@@ -51,11 +52,6 @@ h1 {
   width: 62%;
   margin: 0 auto;
 }
-
-/* .main-display img {
-  display: block;
-  margin: 0 auto;
-} */
 
 .canvas-backgrounds {
   display: none;
@@ -156,6 +152,7 @@ h1 {
   width: 5%;
   top: 12%;
   right: 13%;
+  cursor: pointer;
 }
 
 .tv {
@@ -222,22 +219,26 @@ h2 {
   z-index: 2;
 }
 
+.find {
+  cursor: grab;
+}
+
 .shelf {
-  width: 22%;
+  width: 24%;
   top: 35%;
-  left: 18%;
+  left: 17%;
 }
 
 .plant {
   width: 7%;
-  top: 29%;
+  top: 30%;
   left: 23%;
 }
 
 .pan {
-  width: 6.5%;
+  width: 7.5%;
   top: 33%;
-  right: 52%;
+  right: 51.5%;
 }
 
 .squirrel {
@@ -294,6 +295,82 @@ h2 {
   left: 13%;
 }
 
+/* INSTRUCTIONS SECTION */
+
+.instructions {
+  position: absoute;
+  /* height: 100%; */
+}
+
+.instructions p {
+  font-size: 2.8vw;
+  width: 15%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.search-instructions p {
+  position: absolute;
+  text-shadow: 3px 3px 3px white;
+  top: 39%;
+}
+
+.search-instructions p:first-child {
+  right: 2%;
+}
+
+.search-instructions p:nth-of-type(2n) {
+  left: 2%;
+}
+
+.instructions img {
+  position: absolute;
+  z-index: 7;
+}
+
+.search-instructions img {
+  transform: rotate(90deg) scaleY(-1);
+  width: 17%;
+  right: 18%;
+  top: 32vh;
+}
+
+.paint-instructions {
+  display: none;
+}
+
+.paint-instructions p {
+  position: absolute;
+  color: white;
+  width: 11%;
+  right: 2%;
+}
+
+.paint-instructions p:first-child {
+  top: 31%;
+}
+
+.paint-instructions p:nth-of-type(2n) {
+  top: 77%;
+
+}
+
+.paint-instructions img {
+  transform: rotate(270deg);
+  width: 5%;
+  right: 13%;
+}
+
+.paint-instructions img:nth-of-type(1n) {
+  top: 35%;
+}
+
+.paint-instructions img:nth-of-type(2n) {
+  top: 80%;
+}
+
+/* FOOTER SECTION */
+
 footer {
   margin: 2rem 0 3rem;
 }
@@ -328,6 +405,8 @@ footer {
   padding: 0 4rem;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1200px) {
   
   header img {
@@ -335,7 +414,7 @@ footer {
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   h2 {
@@ -350,6 +429,52 @@ footer {
 
   .close-painting {
     top: 8%;
+  }
+
+  .search-instructions p {
+    top: 33%;
+  }
+
+  .search-instructions img {
+    top: 28%;
+  }
+
+  .paint-instructions p:first-of-type {
+    top: 25%;
+  }
+
+  .paint-instructions p:last-of-type {
+    top: 62%;
+  }
+
+  .paint-instructions img:first-of-type {
+    top: 29%;
+  }
+
+  .paint-instructions img:last-of-type {
+    top: 64%;
+  }
+
+  .canvas {
+    border-radius: 160px/130px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .paint-instructions p:first-of-type {
+    top: 24%;
+  }
+
+  .paint-instructions p:last-of-type {
+    top: 51%;
+  }
+
+  .paint-instructions img:first-of-type {
+    top: 27%;
+  }
+
+  .paint-instructions img:last-of-type {
+    top: 53%;
   }
 
   .canvas {
@@ -372,6 +497,34 @@ footer {
     border-radius: 85px/65px;
     top: 7.5%;
     left: 5.7%;
+  }
+
+  .search-instructions p {
+    top: 24%;
+  }
+
+  .search-instructions img {
+    top: 20%;
+  }
+
+  .paint-instructions p:first-of-type {
+    top: 18%;
+  }
+
+  .paint-instructions p:last-of-type {
+    top: 41%;
+  }
+
+  .paint-instructions img:first-of-type {
+    top: 20%;
+  }
+
+  .paint-instructions img:last-of-type {
+    top: 42%;
+  }
+
+  .canvas {
+    border-radius: 160px/130px;
   }
 }
 
@@ -399,6 +552,34 @@ footer {
     top: 7%;
   }
 
+  .search-instructions p {
+    top: 17%;
+  }
+
+  .search-instructions img {
+    top: 14%;
+  }
+
+  .paint-instructions p:first-of-type {
+    top: 19%;
+  }
+
+  .paint-instructions p:last-of-type {
+    top: 41%;
+  }
+
+  .paint-instructions img:first-of-type {
+    top: 21%;
+  }
+
+  .paint-instructions img:last-of-type {
+    top: 42%;
+  }
+
+  .canvas {
+    border-radius: 160px/130px;
+  }
+
   .footer-container {
     flex-direction: column-reverse;
   }
@@ -411,6 +592,37 @@ footer {
 
   .name p {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-height: 414px) {
+  
+  .search-instructions p {
+    top: 40%;
+  }
+
+  .search-instructions img {
+    top: 35%;
+  }
+
+  .paint-instructions p:first-of-type {
+    top: 33%;
+  }
+
+  .paint-instructions p:last-of-type {
+    top: 72%;
+  }
+
+  .paint-instructions img:first-of-type {
+    top: 37%;
+  }
+
+  .paint-instructions img:last-of-type {
+    top: 75%;
+  }
+
+  .canvas {
+    border-radius: 160px/130px;
   }
 }
 

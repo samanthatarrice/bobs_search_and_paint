@@ -18,6 +18,9 @@ function findItems() {
         canvasBackgrounds.style.backgroundImage = 'url("images/tree-background.jpeg")';
       }
     
+      //Hide search instructions:
+      document.querySelector('.search-instructions').style.display = 'none';
+
       paint();
       // findItems();
     })
@@ -40,6 +43,9 @@ function paint() {
 
   //Darken background:
   document.body.classList.add('dark-background');
+
+  //Display paint instructions:
+  document.querySelector('.paint-instructions').style.display = 'block';
 
   //Bring TV to foreground so it covers the coloring page but doesn't cover the canvas:
   document.querySelector('.tv').style.zIndex = '5';
@@ -123,6 +129,7 @@ function paint() {
       paintingContainer.style.display = 'none';
       document.querySelector('.tv').style.zIndex = '1';
       document.body.classList.remove('dark-background');
+      document.querySelector('.paint-instructions').style.display = 'none';
       // findItems();
     })
 

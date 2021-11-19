@@ -22,6 +22,7 @@ DO IF THERE IS TIME...
 - add free paint option
 - change contact icons to be bigger on mobile
 - if all items are found (all elements with .find class have display of none), then show reset button and script reset
+- add different cursors when user chooses each brush size
 
 - add texture to walls to look more part of the scene.
 
