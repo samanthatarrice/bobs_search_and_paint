@@ -1,8 +1,6 @@
 # bobs_search_and_paint
 
 TO DO:
-- add canvases for other all four objects with different coloring pages for each.
-- add script for all canvases
 - fix issue where findItem() function stops working after user exits out of paiting first time
 - make TV bigger on smaller widths
 - make fonts and icons bigger for smaller screens
@@ -11,15 +9,19 @@ TO DO:
 - create landing page
 - clean up code
 
+*Add Bob quotes! Possibly to landing page and read me...
+- "We don't make mistakes, juat happy little accidents"
+
 
 ----
 
 DO IF THERE IS TIME...
-- add eraser
+- add eraser...but maybe this goes against the painting style? (no mistakes)...possibly change style of brush so it paints over other colors.
 - add more items in display to make things harder to find
 - add custom cursors
 - add free paint option
 - change site so everything fits the height of user screens
+- add texture to walls to look more part of the scene.
 
 ----
 

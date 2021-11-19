@@ -19,7 +19,7 @@ function findItems() {
       }
     
       paint();
-      findItems();
+      // findItems();
     })
   })
 }
@@ -29,7 +29,7 @@ function paint() {
   //Declare variables and make elements visible:
   const closePainting = document.querySelector('.close-painting');
   closePainting.style.display = 'block';
-  const canvas = document.querySelector(".canvas");
+  const canvas = document.querySelector('.canvas');
   canvas.style.display = 'block';
   // const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
   canvasBackgrounds.style.display = 'block';
@@ -69,8 +69,6 @@ function paint() {
     })
   })
   
-
-
   //Set up drawing on canvas:
   const ctx = canvas.getContext('2d');
 
@@ -114,15 +112,18 @@ function paint() {
 
     //TOUCH EVENTS:
 
-      // Close painting:
+    // Close painting:
     closePainting.addEventListener('click', () => {
       closePainting.style.display = 'none';
       canvas.style.display = 'none';
       canvasBackgrounds.style.display = 'none';
       paintingContainer.style.display = 'none';
-      // findItems();
-    }) //This works, but big problem bc the findItems() function doesn't work after for some reason...
+      document.querySelector('.tv').style.zIndex = '1';
+      findItems();
+    })
 
 }
+
+
 
 
