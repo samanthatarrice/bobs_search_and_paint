@@ -36,15 +36,31 @@ h1 {
   font-size: 5vw;
 }
 
-.canvas-background {
+.main-display {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* .main-display img {
+  display: block;
+  margin: 0 auto;
+} */
+
+.canvas-backgrounds {
   display: none;
   width: 55vw;
-  height: calc(70vw * (47/70.3));
+  height: calc(70vw * (47/75));
   position: absolute;
   z-index: 3;
-  background: url("images/mountain-coloring-page.jpeg");
+  background: white;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.canvas-backgrounds img {
+  position: absolute;
 }
 
 .canvas {
@@ -54,35 +70,41 @@ h1 {
   position: absolute;
   top: 7%;
   left: 5%;
-  z-index: 4;
+  z-index: 6;
   border-radius: 85px/65px;
   box-shadow: 30px 30px 30px white, -30px -30px 30px white;
 }
 
+.painting-container {
+  display: none;
+}
+
 .color-wheel {
   position: absolute;
-  z-index: 0;
+  z-index: 6;
   width: 7.2%;
   top: 17.2%;
   right: 5.5%;
   opacity: 70%;
+  border-radius: 50%;
 }
 
 .color-picker {
   position: absolute;
-  z-index: 0;
+  z-index: 7;
   top: 16%;
   right: 4.5%;
   width: 9%;
   height: 13%;
   opacity: 0;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .brushes {
   position: absolute;
-  z-index: 0;
+  z-index: 6;
   transform: rotate(270deg);
   width: 23%;
   bottom: 2%;
@@ -93,31 +115,41 @@ h1 {
 .sizes {
   position: absolute;
   width: 23%;
-  height: 28%;
-  z-index: 0;
-  bottom: 3%;
+  height: 26%;
+  z-index: 6;
+  bottom: 5.5%;
   right: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .sizes div {
-  height: 25%;
-  width: 100%;
-  opacity: 0;
-  z-index: 0;
+  height: 11.5%;
+  /* width: 100%; */
+  opacity: 50%;
+  z-index: 7;
   cursor: grab;
 }
 
-.main-display {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
+.sizes div:nth-child(1) {
+  height: 28%;
 }
 
-.main-display img {
-  display: block;
-  margin: 0 auto;
+.sizes div:nth-child(2) {
+  height: 15%;
+}
+
+.sizes div:nth-child(4) {
+  height: 18%;
+}
+
+.close-painting {
+  display: none;
+  position: absolute;
+  width: 5%;
+  top: 5%;
+  right: 5%;
 }
 
 .tv {
@@ -162,11 +194,12 @@ h1 {
 }
 
 .side-wall {
+  position: absolute;
   height: 81%;
   top: 9.5%;
   right: 38%;
   width: 10%;
-  /* z-index: ; Not working for some reason...*/
+  /* z-index: -5; */
 }
 
 h2 {

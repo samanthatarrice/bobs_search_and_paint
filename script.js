@@ -1,37 +1,77 @@
-const imagesToFind = Array.from(document.querySelectorAll('.find'));
+findItems();
 
-imagesToFind.forEach(image => {
-  image.addEventListener('click', () => {
-    image.style.display = 'none';
+const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
 
-    canvas();
+function findItems() {
+  const imagesToFind = Array.from(document.querySelectorAll('.find'));
+  imagesToFind.forEach(image => {
+    image.addEventListener('click', () => {
+      image.style.display = 'none';
+
+      if (image.classList.contains('cloud')) {
+        canvasBackgrounds.style.backgroundImage = 'url("images/cloud-background.jpeg")';
+      } else if (image.classList.contains('squirrel')) { 
+        canvasBackgrounds.style.backgroundImage = 'url("images/squirrel-background.jpeg")';
+      } else if (image.classList.contains('plant')) { 
+        canvasBackgrounds.style.backgroundImage = 'url("images/plant-background.jpeg")';
+      } else {
+        canvasBackgrounds.style.backgroundImage = 'url("images/tree-background.jpeg")';
+      }
+    
+      paint();
+      findItems();
+    })
   })
-})
+}
 
-function canvas() {
+function paint() {
 
+  //Declare variables and make elements visible:
+  const closePainting = document.querySelector('.close-painting');
+  closePainting.style.display = 'block';
   const canvas = document.querySelector(".canvas");
-  const canvasBackground = document.querySelector('.canvas-background');
-
-  document.querySelector('.color-wheel').style.zIndex = '6';
-  const userColor = document.querySelector('.color-picker');
-  userColor.style.zIndex = '7';
-  document.querySelector('.brushes').style.zIndex = '6';
-  document.querySelector('.sizes').style.zIndex = '7';
-
   canvas.style.display = 'block';
-  canvasBackground.style.display = 'block';
-  
-  canvas.width = window.innerWidth/1.98;
-  canvas.height = canvas.width * 0.792;
+  // const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
+  canvasBackgrounds.style.display = 'block';
+  const userColor = document.querySelector('.color-picker');
+  const paintingContainer = document.querySelector('.painting-container')
+  paintingContainer.style.display = "block";
+    //Display all pant tools
 
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth/1.98;
-    canvas.height = canvas.width * 0.792;
-  })
-  canvas.style.zIndex = '6';
+  //Bring TV to foreground so it covers the coloring page but doesn't cover the canvas:
   document.querySelector('.tv').style.zIndex = '5';
 
+  //Set canvas size dynamically by using ratio of TV:
+  canvas.width = window.innerWidth/1.98;
+  canvas.height = canvas.width * 0.792;
+  //Set canvas size when user resizes window:
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth/1.98;
+      canvas.height = canvas.width * 0.792;
+    })
+
+
+  let userSize = '20';
+  //Select brush size:
+  const sizes = Array.from(document.querySelectorAll('.sizes div'));
+  sizes.forEach(size => {
+    size.addEventListener('click', () => {
+      if(size.classList.contains('large')) {
+        userSize = '40';
+      } else if (size.classList.contains('small')) {
+        userSize = '8';
+      } else if (size.classList.contains('extra-sm')) {
+        userSize = '3';
+      } else {
+        userSize = '20';
+      }
+      return userSize;
+    })
+  })
+  
+
+
+  //Set up drawing on canvas:
   const ctx = canvas.getContext('2d');
 
   let isPainting = false;
@@ -53,7 +93,7 @@ function canvas() {
 
   function draw(e) {
     if (!isPainting) return;
-    ctx.lineWidth = '20';
+    ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -74,8 +114,14 @@ function canvas() {
 
     //TOUCH EVENTS:
 
-
-
+      // Close painting:
+    closePainting.addEventListener('click', () => {
+      closePainting.style.display = 'none';
+      canvas.style.display = 'none';
+      canvasBackgrounds.style.display = 'none';
+      paintingContainer.style.display = 'none';
+      // findItems();
+    }) //This works, but big problem bc the findItems() function doesn't work after for some reason...
 
 }
 
