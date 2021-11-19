@@ -38,6 +38,9 @@ function paint() {
   paintingContainer.style.display = "block";
     //Display all pant tools
 
+  //Darken background:
+  document.body.classList.add('dark-background');
+
   //Bring TV to foreground so it covers the coloring page but doesn't cover the canvas:
   document.querySelector('.tv').style.zIndex = '5';
 
@@ -119,7 +122,8 @@ function paint() {
       canvasBackgrounds.style.display = 'none';
       paintingContainer.style.display = 'none';
       document.querySelector('.tv').style.zIndex = '1';
-      findItems();
+      document.body.classList.remove('dark-background');
+      // findItems();
     })
 
 }

@@ -11,6 +11,16 @@ body {
   font-family: 'Sue Ellen Francisco', sans-serif;
 }
 
+.dark-background {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+    ), url("images/background-transparent.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
   margin: 3rem 0 1rem;
   display: flex;
@@ -20,7 +30,7 @@ header {
 }
 
 header img {
-  width: 35vw;
+  width: 28vw;
   padding-right: 2rem;
 }
 
@@ -33,7 +43,7 @@ header img {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 .main-display {
@@ -144,8 +154,8 @@ h1 {
   display: none;
   position: absolute;
   width: 5%;
-  top: 8%;
-  right: 7%;
+  top: 12%;
+  right: 13%;
 }
 
 .tv {
@@ -292,7 +302,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -304,6 +314,13 @@ footer {
   font-size: 5vw;
   padding: 1vw 2vw;
   cursor: help;
+  color: black;
+  text-decoration: none;
+}
+
+.fab:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .name p {
@@ -329,6 +346,10 @@ footer {
     top: 3%;
     left: 51.5%;
     font-size: 4rem;
+  }
+
+  .close-painting {
+    top: 8%;
   }
 
   .canvas {
@@ -374,6 +395,23 @@ footer {
     font-size: 0.75rem;
   }
 
+  .close-painting {
+    top: 7%;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .fab {
+    font-size: 5rem;
+    margin-top: 2rem;
+    padding: 0 3rem;
+  }
+
+  .name p {
+    font-size: 1.3rem;
+  }
 }
 
 
