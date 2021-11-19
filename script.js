@@ -8,6 +8,10 @@ imagesToFind.forEach(image => {
   })
 })
 
+const colorPicker = document.querySelector('.color-picker')
+colorPicker.value = '#FFFFFF'
+console.log(colorPicker);
+
 function canvas() {
 
   const canvas = document.querySelector(".canvas");

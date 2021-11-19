@@ -56,6 +56,35 @@ h1 {
   left: 5%;
   z-index: 4;
   border-radius: 85px/65px;
+  box-shadow: 30px 30px 30px white, -30px -30px 30px white;
+}
+
+.painting-container {
+  /* position: relative; */
+}
+
+.color-wheel {
+  position: absolute;
+  z-index: 6;
+  width: 7.2%;
+  top: 17.2%;
+  right: 5.5%;
+  opacity: 70%;
+}
+
+.color-picker {
+  position: absolute;
+  z-index: 7;
+  top: 16%;
+  right: 4.5%;
+  width: 9%;
+  height: 13%;
+  /* border-radius: 50%; */
+  /* padding: 2rem; */
+  opacity: 0;
+  border: none;
+  /* background-image: url("images/color-wheel.png");
+  background-size: cover; */
 }
 
 .main-display {
