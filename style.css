@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  margin: 5rem 0 0.5rem;
+  margin: 3rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items:end;
@@ -26,9 +26,9 @@ header img {
 
 .apostrophe {
   font-family: 'Kaushan script', cursive;
-  font-size: 6vw;
+  font-size: 5rem;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 52%;
 }
 
@@ -38,7 +38,7 @@ h1 {
 
 .main-display {
   position: relative;
-  width: 70%;
+  width: 62%;
   margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ h1 {
 .canvas-backgrounds {
   display: none;
   width: 55vw;
-  height: calc(70vw * (47/75));
+  height: calc(70vw * (47/80));
   position: absolute;
   z-index: 3;
   background: white;
@@ -59,19 +59,15 @@ h1 {
   background-position: center;
 }
 
-.canvas-backgrounds img {
-  position: absolute;
-}
-
 .canvas {
   display: none;
   background-color: white;
   opacity: 40%;
   position: absolute;
-  top: 7%;
+  top: 7.2%;
   left: 5%;
   z-index: 6;
-  border-radius: 85px/65px;
+  border-radius: 160px/130px;
   box-shadow: 30px 30px 30px white, -30px -30px 30px white;
 }
 
@@ -148,8 +144,8 @@ h1 {
   display: none;
   position: absolute;
   width: 5%;
-  top: 5%;
-  right: 5%;
+  top: 8%;
+  right: 7%;
 }
 
 .tv {
@@ -195,20 +191,19 @@ h1 {
 
 .side-wall {
   position: absolute;
-  height: 81%;
+  height: 80%;
   top: 9.5%;
   right: 38%;
   width: 10%;
-  /* z-index: -5; */
+  /* z-index: -5; Why isn't this working??*/
 }
 
 h2 {
   margin: 36% 0;
-  width: 60%;
+  width: 65%;
   padding-left: 5%;
-  font-size: 2vh;
+  font-size: 2.5rem;
   text-align: center;
-  line-height: 1.4;
 }
 
 .image {
@@ -312,48 +307,77 @@ footer {
 }
 
 .name p {
-  font-size: 3vw;
-  padding-right: 3rem;
+  font-size: 2.2vw;
+  padding: 0 4rem;
 }
 
-/* MODAL */
-
-/* .modal-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 5;
-}
-
-.modal {
-  margin: 0 auto;
-} */
-
-@media screen and (max-width: 600px) {
-  /* .main-display {
-    width: 90%;
-  } */
-
-  footer {
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   
+  header img {
+    width: 28vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
   .apostrophe {
     top: 3%;
-  }
-  
-  h2 {
-    font-size: 4vh;
+    left: 51.5%;
+    font-size: 4rem;
   }
 
   .canvas {
     border-radius: 160px/130px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .apostrophe {
+    top: 2.7%;
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .canvas {
+    border-radius: 85px/65px;
+    top: 7.5%;
+    left: 5.7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .apostrophe {
+    left: 50%;
+    top: 3%;
+    font-size: 2rem;
+  }
+
+  header img {
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+  }
+
+}
+
+
+
+
+
 

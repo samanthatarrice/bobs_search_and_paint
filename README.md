@@ -1,7 +1,7 @@
 # bobs_search_and_paint
 
 TO DO:
-- fix issue where findItem() function stops working after user exits out of paiting first time
+- change site so everything fits the height of user screens in mobile (figure out how to change size in js for mobile)
 - make TV bigger on smaller widths
 - make fonts and icons bigger for smaller screens
 - make image file sizes smaller
@@ -20,7 +20,9 @@ DO IF THERE IS TIME...
 - add more items in display to make things harder to find
 - add custom cursors
 - add free paint option
-- change site so everything fits the height of user screens
+- change contact icons to be bigger on mobile
+- if all items are found (all elements with .find class have display of none), then show reset button and script reset
+
 - add texture to walls to look more part of the scene.
 
 ----

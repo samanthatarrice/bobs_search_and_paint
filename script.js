@@ -42,11 +42,11 @@ function paint() {
   document.querySelector('.tv').style.zIndex = '5';
 
   //Set canvas size dynamically by using ratio of TV:
-  canvas.width = window.innerWidth/1.98;
+  canvas.width = window.innerWidth/2.25;
   canvas.height = canvas.width * 0.792;
   //Set canvas size when user resizes window:
     window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth/1.98;
+      canvas.width = window.innerWidth/2.25;
       canvas.height = canvas.width * 0.792;
     })
 
