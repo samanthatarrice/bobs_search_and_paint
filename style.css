@@ -12,10 +12,10 @@ body {
 }
 
 header {
-  margin: 5rem 0 1rem;
+  margin: 5rem 0 0.5rem;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items:end;
   display: relative;
 }
 
@@ -39,7 +39,7 @@ h1 {
 .canvas-background {
   display: none;
   width: 55vw;
-  height: calc(70vw * (47/70));
+  height: calc(70vw * (47/70.3));
   position: absolute;
   z-index: 3;
   background: url("images/mountain-coloring-page.jpeg");
@@ -59,13 +59,9 @@ h1 {
   box-shadow: 30px 30px 30px white, -30px -30px 30px white;
 }
 
-.painting-container {
-  /* position: relative; */
-}
-
 .color-wheel {
   position: absolute;
-  z-index: 6;
+  z-index: 0;
   width: 7.2%;
   top: 17.2%;
   right: 5.5%;
@@ -74,17 +70,43 @@ h1 {
 
 .color-picker {
   position: absolute;
-  z-index: 7;
+  z-index: 0;
   top: 16%;
   right: 4.5%;
   width: 9%;
   height: 13%;
-  /* border-radius: 50%; */
-  /* padding: 2rem; */
   opacity: 0;
   border: none;
-  /* background-image: url("images/color-wheel.png");
-  background-size: cover; */
+  cursor: pointer;
+}
+
+.brushes {
+  position: absolute;
+  z-index: 0;
+  transform: rotate(270deg);
+  width: 23%;
+  bottom: 2%;
+  right: 0;
+  /* z-index: 0; */
+}
+
+.sizes {
+  position: absolute;
+  width: 23%;
+  height: 28%;
+  z-index: 0;
+  bottom: 3%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sizes div {
+  height: 25%;
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+  cursor: grab;
 }
 
 .main-display {
@@ -181,15 +203,15 @@ h2 {
 }
 
 .squirrel {
-  width: 6%;
-  bottom: 28%;
-  right: 45%;
+  width: 4%;
+  bottom: 22%;
+  left: 33%;
 }
 
 .easel2 {
-  width: 17%;
+  width: 12.25%;
   bottom: 28%;
-  right: 47%;
+  right: 49.5%;
 }
 
 .green-painting {
@@ -205,14 +227,14 @@ h2 {
 }
 
 .easel {
-  width: 20%;
-  left: 19%;
+  width: 14%;
+  left: 20%;
   top: 50%;
 }
 
 .pink-painting {
   width: 13%;
-  left: 22.5%;
+  left: 22%;
   top: 50.7%;
 }
 
@@ -242,23 +264,28 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
 }
 
+.footer-links {
+  display: inline-flex;
+}
+
 .fab {
-  font-size: 4vw;
-  padding: 1.5rem;
+  font-size: 5vw;
+  padding: 1vw 2vw;
+  cursor: help;
 }
 
 .name p {
-  font-size: 2vw;
-  padding-right: 1rem;
+  font-size: 3vw;
+  padding-right: 3rem;
 }
 
 /* MODAL */
 
-.modal-container {
+/* .modal-container {
   display: none;
   position: fixed;
   top: 0;
@@ -271,11 +298,16 @@ footer {
 
 .modal {
   margin: 0 auto;
+} */
+
+@media screen and (max-width: 600px) {
+  /* .main-display {
+    width: 90%;
+  } */
+
+  footer {
+  }
 }
-
-
-
-
 
 @media screen and (min-width: 1200px) {
   

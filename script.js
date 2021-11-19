@@ -8,14 +8,16 @@ imagesToFind.forEach(image => {
   })
 })
 
-const colorPicker = document.querySelector('.color-picker')
-colorPicker.value = '#FFFFFF'
-console.log(colorPicker);
-
 function canvas() {
 
   const canvas = document.querySelector(".canvas");
   const canvasBackground = document.querySelector('.canvas-background');
+
+  document.querySelector('.color-wheel').style.zIndex = '6';
+  const userColor = document.querySelector('.color-picker');
+  userColor.style.zIndex = '7';
+  document.querySelector('.brushes').style.zIndex = '6';
+  document.querySelector('.sizes').style.zIndex = '7';
 
   canvas.style.display = 'block';
   canvasBackground.style.display = 'block';
@@ -52,7 +54,7 @@ function canvas() {
   function draw(e) {
     if (!isPainting) return;
     ctx.lineWidth = '20';
-    ctx.strokeStyle = 'black';
+    ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
     ctx.globalCompositeOperation = 'hue';
@@ -72,4 +74,9 @@ function canvas() {
 
     //TOUCH EVENTS:
 
+
+
+
 }
+
+
