@@ -95,6 +95,7 @@ function paint() {
   let isPainting = false;
 
   function startStroke(e) {
+    preventDefault(e);
     isPainting = true;
     draw(e);
   }
@@ -110,13 +111,13 @@ function paint() {
   }
 
   function draw(e) {
-
+    preventDefault(e);
     if (!isPainting) return;
     ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
-    ctx.globalCompositeOperation = 'hue';
+    ctx.globalCompositeOperation = 'luminosity';
     //change this later?
 
     ctx.lineTo(e.offsetX, e.offsetY);
@@ -133,6 +134,7 @@ function paint() {
 
     //TOUCH EVENTS:
 
+    
     // Close painting:
     closePainting.addEventListener('click', () => {
       closePainting.style.display = 'none';
