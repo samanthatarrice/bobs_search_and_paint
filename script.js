@@ -6,16 +6,20 @@ function findItems() {
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
   imagesToFind.forEach(image => {
     image.addEventListener('click', () => {
-      image.style.display = 'none';
-
+      // image.style.display = 'none';
+        //removed because it seemed better to leave them in the display
       if (image.classList.contains('cloud')) {
         canvasBackgrounds.style.backgroundImage = 'url("images/cloud-background.jpeg")';
+        document.querySelector('.search-cloud').style.filter = 'grayscale()';
       } else if (image.classList.contains('squirrel')) { 
         canvasBackgrounds.style.backgroundImage = 'url("images/squirrel-background.jpeg")';
+        document.querySelector('.search-squirrel').style.filter = 'grayscale()';
       } else if (image.classList.contains('plant')) { 
         canvasBackgrounds.style.backgroundImage = 'url("images/plant-background.jpeg")';
+        document.querySelector('.search-plant').style.filter = 'grayscale()';
       } else {
         canvasBackgrounds.style.backgroundImage = 'url("images/tree-background.jpeg")';
+        document.querySelector('.search-tree').style.filter = 'grayscale()';
       }
     
       //Hide search instructions:
@@ -59,24 +63,31 @@ function paint() {
       canvas.height = canvas.width * 0.792;
     })
 
-
-  let userSize = '20';
   //Select brush size:
+  let userSize = '20';
   const sizes = Array.from(document.querySelectorAll('.sizes div'));
   sizes.forEach(size => {
     size.addEventListener('click', () => {
+      canvas.classList.remove(`size${userSize}`);
       if(size.classList.contains('large')) {
         userSize = '40';
+        canvas.classList.add(`size${userSize}`);
       } else if (size.classList.contains('small')) {
         userSize = '8';
+        canvas.classList.add(`size${userSize}`);
       } else if (size.classList.contains('extra-sm')) {
         userSize = '3';
+        canvas.classList.add(`size${userSize}`);
       } else {
         userSize = '20';
+        canvas.classList.add(`size${userSize}`);
       }
       return userSize;
     })
   })
+
+  //Add class for cursor image:
+  
   
   //Set up drawing on canvas:
   const ctx = canvas.getContext('2d');
@@ -99,6 +110,7 @@ function paint() {
   }
 
   function draw(e) {
+
     if (!isPainting) return;
     ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;

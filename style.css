@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Sue Ellen Francisco', sans-serif;
+  
 }
 
 .dark-background {
@@ -77,6 +78,22 @@ h1 {
   box-shadow: 30px 30px 30px white, -30px -30px 30px white;
 }
 
+.size40 {
+  cursor: url(images/40.png) 20 20, auto;
+}
+
+.size8 {
+  cursor: url(images/8.png) 4 4, auto;
+}
+
+.size3 {
+  cursor: url(images/3.png) 1.5 1.5, auto;
+}
+
+.size20 {
+  cursor: url(images/20.png) 10 10, auto;
+}
+
 .painting-container {
   display: none;
 }
@@ -102,6 +119,17 @@ h1 {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.brushes-shadow {
+  position: absolute;
+  transform: rotate(270deg);
+  width: 23%;
+  z-index: 6;
+  bottom: 1.5%;
+  right: 0;
+  filter: grayscale() drop-shadow(-8px -5px 5px rgb(42, 38, 38));
+  opacity: 0.8;
 }
 
 .brushes {
@@ -187,7 +215,7 @@ h1 {
   justify-content: space-between;
   position: absolute;
   top: 26%;
-  right: 28%;
+  right: 27.5%;
   width: 6.5%;
   height: 55%;
 }
@@ -454,10 +482,6 @@ footer {
   .paint-instructions img:last-of-type {
     top: 64%;
   }
-
-  .canvas {
-    border-radius: 160px/130px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -478,7 +502,7 @@ footer {
   }
 
   .canvas {
-    border-radius: 160px/130px;
+    border-radius: 110px/90px;
   }
 }
 
@@ -521,10 +545,6 @@ footer {
 
   .paint-instructions img:last-of-type {
     top: 42%;
-  }
-
-  .canvas {
-    border-radius: 160px/130px;
   }
 }
 
@@ -577,7 +597,7 @@ footer {
   }
 
   .canvas {
-    border-radius: 160px/130px;
+    border-radius: 65px/45px;
   }
 
   .footer-container {
@@ -619,10 +639,6 @@ footer {
 
   .paint-instructions img:last-of-type {
     top: 75%;
-  }
-
-  .canvas {
-    border-radius: 160px/130px;
   }
 }
 
