@@ -95,7 +95,6 @@ function paint() {
   let isPainting = false;
 
   function startStroke(e) {
-    preventDefault(e);
     isPainting = true;
     draw(e);
   }
@@ -111,7 +110,6 @@ function paint() {
   }
 
   function draw(e) {
-    preventDefault(e);
     if (!isPainting) return;
     ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;
@@ -119,7 +117,6 @@ function paint() {
     ctx.lineCap = 'round';
     ctx.globalCompositeOperation = 'luminosity';
     //change this later?
-
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
     ctx.beginPath();
@@ -148,7 +145,6 @@ function paint() {
     })
 
 }
-
 
 
 

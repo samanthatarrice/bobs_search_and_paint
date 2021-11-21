@@ -185,6 +185,7 @@ h1 {
 
 .tv {
   width: 100%;
+  /* z-index: 4; */
   z-index: 1;
   position: relative;
   /*allows you to change z-index*/
@@ -208,6 +209,15 @@ h1 {
   z-index: -1;
 }
 
+.side-wall {
+  position: absolute;
+  height: 80%;
+  top: 9.5%;
+  right: 38%;
+  width: 10%;
+  /* z-index: -5; */
+}
+
 .search-images {
   display: flex;
   flex-direction: column;
@@ -224,14 +234,7 @@ h1 {
   width: 100%;
 }
 
-.side-wall {
-  position: absolute;
-  height: 80%;
-  top: 9.5%;
-  right: 38%;
-  width: 10%;
-  /* z-index: -5; Why isn't this working??*/
-}
+
 
 h2 {
   margin: 36% 0;
@@ -431,6 +434,15 @@ footer {
 .name p {
   font-size: 2.2vw;
   padding: 0 4rem;
+}
+
+.book-video {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  height: 85%;
+  width: 72%;
+  z-index: 3;
 }
 
 /* MEDIA QUERIES */
