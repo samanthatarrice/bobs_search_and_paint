@@ -1,14 +1,15 @@
 <h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
+<p float="left" align="center">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/home_with_instructions.png" height="250">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/paint_mode.png" height="250">
+</p>
+
 <p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🌐 Link to App's Landing Page </a></h3>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h5>
-<p float="left" align="center">
-  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/home_with_instructions.png" height="250">
-  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/paint_mode.png" height="250">
-</p>
 
 <h2 align="center">📄 <img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180"> November 2021 Hackathon Project Guildelines:</h2>
 
@@ -57,7 +58,10 @@
   <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
 <h3 align="center">Design:</h3>
-  <div align="center">**Add images of design**</div>
+  <div align="center">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/app-design.png" height="500">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/landing-design.png" height="500">
+  </div>
 
 <h3 align="center">Technologies Used:</h3>
   <div align="center">
