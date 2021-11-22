@@ -59,8 +59,8 @@
 
 <h3 align="center">Design:</h3>
   <div align="center">
-    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/app-design.png" height="500">
-    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/landing-design.png" height="500">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/app-design.png" height="450">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/landing-design.png" height="450">
   </div>
 
 <h3 align="center">Technologies Used:</h3>
