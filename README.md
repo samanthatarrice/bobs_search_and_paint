@@ -103,7 +103,7 @@
 
 <h2 align="center">❓How To Use:</h2>
 
-<p>This app is only currently only designed for desktop use. You can open it on any web browser, but it is recommended to not use Internet Explorer:</p>
+<p>This app is only currently only designed for desktop use. You can open it on any web browser, it is just recommended to not use Internet Explorer:</p>
 <ol>
   <li>Look inside the TV screen to search for the items you see in the white vertical bar (the ☁️, 🐿, 🪴, and 🌲).</li>
   <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages.</li>
@@ -111,6 +111,7 @@
     <li>Click on the top knob to open the color picker. Choose a color.</li>
     <li>Click on a brush to change the stroke size.</li>
     <li>When you are done, click the black X in the top right to close the painting and search for more items.</li>
+  </ul>
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
 </ol>
 
