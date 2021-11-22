@@ -54,7 +54,7 @@
 
 <!---END MINTBEAN DOC--->
 
-<h2 align="center">👩🏻‍💻 Resources and Process:</h2>
+<h2 align="center">👩🏻‍💻 My Resources and Process:</h2>
   <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
 <h3 align="center">Design:</h3>
