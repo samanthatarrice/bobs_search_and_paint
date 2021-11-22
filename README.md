@@ -79,7 +79,6 @@
 
 <h3>Assets:</h3>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
-  <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
   <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgevzoEcDsJI1eXtp29nSHZ3fafFAyBUqOg&usqp=CAU">Winter landscape with pink sky</a></li>
   <li><a href="https://www.maxfosterphotography.com/images/xl/Bob-Ross-Mountain-Summit.jpg">Green forest with river and mountains</a></li>
   <li><a href="https://cdn.shopify.com/s/files/1/1414/9028/products/0afc8fcf7451794a4d4aa41ff4b5a1fc_1024x1024.jpg?v=1574460931">Bob Ross pan painting</a></li>
@@ -107,9 +106,9 @@
   <li>Look inside the TV screen to search for the items you see in the white vertical bar (the ☁️, 🐿, 🪴, and 🌲).</li>
   <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages:</li>
   <ul>
-    🌈<li>Click on the top knob to open the color picker. Choose a color.</li>
-    🖌<li>Click on a brush to change the stroke size.</li>
-    𝗫<li>When you are done, click the black X in the top right to close the painting and search for more items.</li>
+    <li>🌈 - Click on the top knob to open the color picker. Choose a color.</li>
+    <li>🖌 - Click on a brush to change the stroke size.</li>
+    <li>𝗫 - When you are done, click the black X in the top right to close the painting and search for more items.</li>
   </ul>
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
 </ol>
