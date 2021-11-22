@@ -1,8 +1,10 @@
-<h1 align="center">Bob Ross' Search & Paint</h1>
+<h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
-<p>This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. I am still a new developer, so I mostly just used HTML, CSS, and JavaScript.</p>
+<h3 align="center"><a href="samanthatarrice.github.io/bobs_search_and_paint/">Link to Deployed Site 🌐</a></h3>
 
-<h2 align="center">Nov 2021 Mintbean Hackathon Project Description:</h2>
+<p>This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
+
+<h2 align="center"><img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180">'s November 2021 Hackathon Project Guildelines:</h2>
 
 <h3>Paint App - Becoming Bob Ross:</h3>
 <p>Computers have been a boon for creativity and imagination. Digital art has, for decades now, been a medium in its own right; and with the advent of NFTs, the future might be very bright indeed for digital artists. Today, we'll build an app that lets your friends and loved ones express their creative side.</p>
@@ -30,20 +32,43 @@
 **I did not have a designer, but I do have some experience using Figma. My designs are linked below**
 
 <h4>Here are some achievable application inspirations on Codepen:</h4>
-  <li>[HTML5 Drawing Pad](https://codepen.io/HarryGateaux/pen/BApxl)</li>
-  <li>[Drawing from Dots](https://codepen.io/cftflora/pen/xdAIw)</li>
-  <li>[SVG Coloring Book](https://codepen.io/tigt/pen/xZEdoP)</li>
-
+  <li><a href="https://codepen.io/HarryGateaux/pen/BApxl">HTML5 Drawing Pad</a></li>
+  <li><a href="https://codepen.io/cftflora/pen/xdAIw">Drawing from Dots</a></li>
+  <li><a href="https://codepen.io/tigt/pen/xZEdoP">SVG Coloring Book</a></li>
 
 <h4>Advanced applications, for further inspiration. We DO NOT recommend you build these...</h4>
-  <li>[Aggie.io](https://aggie.io/)</li>
-  <li>[Free Coloring Pages](https://www.free-coloring-pages.com/online.html)</li>
+  <li><a href="aggie.io">Aggie.io</a></li>
+  <li><a href="https://www.free-coloring-pages.com/online.html">Free Coloring Pages</a></li>
 
-<h4>Best of luck, and make sure to consult the [Hiring Hackathon Guide](https://info.mintbean.io/hiring-hackathon-guide)!</h4>
+<h4>Best of luck, and make sure to consult the <a href="https://info.mintbean.io/hiring-hackathon-guide">Hiring Hackathon Guide!</a></h4>
 
-<h2 align="center">My Interpretation</h2>
+<h2 align="center">My Interpretation:</h2>
 
-<p>Check out my [landing page](https://samanthatarrice.github.io/bob_landing_page/) to learn more!</p>
+<p align="center">Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more!</p>
+
+<h3>Design:</h3>
+
+images of design
+
+<h3>Technologies Used:</h3>
+
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888847.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="50" height="50">
+</div>
+
+<h3>Completed Project</h3>
+
+screenshots of completed project
+
+<h3>How To Use</h3>
+
+instructions here
+
 
 
 What problem does it solve?
