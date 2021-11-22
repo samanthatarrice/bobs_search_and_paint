@@ -1,9 +1,15 @@
 <h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
-<h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🌐 Link to App's Landing Page </a></h3>
-<h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h3>
-
 <p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
+
+<h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🌐 Link to App's Landing Page </a></h3>
+<div align="center">**ADD IMAGE HERE**</div>
+
+<h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h5>
+<p float="left" align="center">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/home_with_instructions.png" height="250">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/paint_mode.png" height="250">
+</p>
 
 <h2 align="center">📄 <img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180"> November 2021 Hackathon Project Guildelines:</h2>
 
@@ -51,8 +57,6 @@
 
 <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
-  <div align="center">**Add images of landing page**</div>
-
 <h3 align="center">Design:</h3>
 
   <div align="center">**Add images of design**</div>
@@ -70,33 +74,44 @@
 
 <h3 align="center">Resources & Assets:</h3>
 
-<h2>Tutorials:</h2>
+<h4>Tutorials:</h4>
   <li>Tutorial #8, "Fun with HTML Canvas", from <a href="https://javascript30.com/">Javascript in 30</a> by Wes Bos</li>
   <li><a href="https://www.youtube.com/watch?v=3GqUM4mEYKA">Learn HTML5 Canvas By Creating A Drawing App</a> by Dev Ed</li>
 
+<h4>Resources:</h4>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
+
+<h4>Assets:</h4>
+  <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
+  <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
+  <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgevzoEcDsJI1eXtp29nSHZ3fafFAyBUqOg&usqp=CAU">Winter landscape with pink sky</a></li>
+  <li><a href="https://www.maxfosterphotography.com/images/xl/Bob-Ross-Mountain-Summit.jpg">Green forest with river and mountains</a></li>
+  <li><a href="https://cdn.shopify.com/s/files/1/1414/9028/products/0afc8fcf7451794a4d4aa41ff4b5a1fc_1024x1024.jpg?v=1574460931">Bob Ross pan painting</a></li>
+  <li><a href="https://lh3.googleusercontent.com/proxy/hLi8bLoQqjgos4cyoz9SrgDGmSSxAn494PHJibbgJJi8qM7Gv0hsVQa_AAijyQoTNh3TqvDniNTgwmhyJRlIc-VT">Green room background</a></li>
+  
+
 **list assests and resources used here**
 
-<h3 align="center">Completed Project:</h3>
-
-  <div align="center">**screenshots of completed project**</div>
-
-<h3 align="center">How To Use:</h3>
+<h2 align="center">❓How To Use:</h2>
 
 **instructions here**
 
-<h3 align="center">Feature Updates:</h3>
--[ ]Touch events for painting on tablets
--[ ]Eraser to painting feature
--[ ]Save option for coloring pages
+<h2 align="center">🖥 Feature Updates:</h2>
+<p>&#9744; Touch events for painting on tablets</p>
+<p>&#9744; Eraser to painting feature</p>
+<p>&#9744; Save option for coloring pages</p>
 
 
 
-<h3 align="center">Developer's Contact Info:</h3>
+<h2 align="center">Developer's Contact Info:</h2>
 
-<p align="center">Contact me through Linkedin!</p>
+<p align="center">Contact me through Linkedin:</p>
 <div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
-
-
+<p align="center"><a href="https://linkedin.com/in/starrice" target="blank">Sam's Linkedin</a></p>
+                                                                          
+<br>
+                                                                          
+<p align="center">Made with 💖 by Samantha Tarrice</p>
 
 
 <!---
