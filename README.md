@@ -1,10 +1,13 @@
 <h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
-<h3 align="center"><a href="samanthatarrice.github.io/bobs_search_and_paint/">🌐 Link to Deployed Site </a></h3>
+<h3 align="center"><a href="samanthatarrice.github.io/bobs_search_and_paint/ target="_blank">🌐 Link to App's Landing Page </a></h3>
+<h3 align="center"><a href="samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h3>
 
-<p>This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
+<p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
 
-<h2 align="center"><img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180"> November 2021 Hackathon Project Guildelines:</h2>
+<h2 align="center">📄 <img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180"> November 2021 Hackathon Project Guildelines:</h2>
+
+<!---START MINTBEAN DOC--->
 
 <h3>Paint App - Becoming Bob Ross:</h3>
 <p>Computers have been a boon for creativity and imagination. Digital art has, for decades now, been a medium in its own right; and with the advent of NFTs, the future might be very bright indeed for digital artists. Today, we'll build an app that lets your friends and loved ones express their creative side.</p>
@@ -42,9 +45,11 @@
 
 <h4>Best of luck, and make sure to consult the <a href="https://info.mintbean.io/hiring-hackathon-guide">Hiring Hackathon Guide!</a></h4>
 
+<!---END MINTBEAN DOC--->
+
 <h2 align="center">👩🏻‍💻 My Interpretation:</h2>
 
-<p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more!</p>
+<p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
   <div align="center">**Add images of landing page**</div>
 
@@ -63,7 +68,11 @@
     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="70" height="70">
   </div>
 
-<h3 align="center">Assets & Resources:</h3>
+<h3 align="center">Resources & Assets:</h3>
+
+<h2>Tutorials:</h2>
+  <li>Tutorial #8, "Fun with HTML Canvas", from <a href="https://javascript30.com/">Javascript in 30</a> by Wes Bos</li>
+  <li><a href="https://www.youtube.com/watch?v=3GqUM4mEYKA">Learn HTML5 Canvas By Creating A Drawing App</a> by Dev Ed</li>
 
 **list assests and resources used here**
 
