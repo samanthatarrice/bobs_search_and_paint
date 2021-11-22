@@ -3,7 +3,6 @@
 <p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🌐 Link to App's Landing Page </a></h3>
-<div align="center">**ADD IMAGE HERE**</div>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h5>
 <p float="left" align="center">
@@ -91,9 +90,9 @@
   <li><a href="https://4.imimg.com/data4/UQ/GG/MY-22749763/paint-brushes-500x500.jpg">Brushes</a></li>
   <li><a href="https://www.pngkey.com/png/full/619-6190501_hsl-colors-gradient-color-wheel-in-illustrator.png">Color wheel</a></li>
   <li><a href="https://www.onlygfx.com/wp-content/uploads/2018/07/8-grunge-x-brush-stroke-3.png">Painted X close button</a></li>
-  <li><a href="">Coloring page for cloud</a>FIND THIS</li>
-  <li><a href="">Coloring page for squirrel</a>FIND THIS</li>
-  <li><a href="">Coloring page for plant</a>FIND THIS</li>
+  <li><a href="https://i.pinimg.com/originals/f3/b2/e7/f3b2e73de17b149407d20a3512378f12.jpg">Coloring page for cloud</a></li>
+  <li><a href="https://www.justcolor.net/wp-content/uploads/sites/1/nggallery/squirrels-and-marmots/coloring-squirrel-with-patterns.jpg">Coloring page for squirrel</a></li>
+  <li><a href="https://3.bp.blogspot.com/-xBKs7xNDbNQ/W6HCkljT2-I/AAAAAAAAF-w/f18A-DTnjmI8iaNfKu48USUa7341kVtLwCLcBGAs/s1600/Butterflies%2Bfrom%2BShenandoah%2BNational%2BPark.jpg">Coloring page for plant</a></li>
   <li><a href="https://wanderjobs.com/wp-content/uploads/2020/07/Mountain-Scenery-Coloring-Page-1022x1024.jpg">Coloring page for tree</a></li>
   <li><a href="https://www.shapedivider.app/">Wavy line dividers</a></li>
   <li><a href="https://c.neh.tw/thumb/f/720/comdlpng6947570.jpg">Favicon</a></li>
@@ -108,13 +107,12 @@
   <li>Look inside the TV screen to search for the items you see in the white vertical bar (the ☁️, 🐿, 🪴, and 🌲).</li>
   <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages:</li>
   <ul>
-    <li>🌈 Click on the top knob to open the color picker. Choose a color.</li>
-    <li>🖌 Click on a brush to change the stroke size.</li>
-    <li>𝗫 When you are done, click the black X in the top right to close the painting and search for more items.</li>
+    🌈<li>Click on the top knob to open the color picker. Choose a color.</li>
+    🖌<li>Click on a brush to change the stroke size.</li>
+    𝗫<li>When you are done, click the black X in the top right to close the painting and search for more items.</li>
   </ul>
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
 </ol>
-
 
 <h2 align="center">🖥 Feature Updates:</h2>
   <p>&#9744; Video popup and external controls when user clicks on Bob</p>
