@@ -9,7 +9,7 @@
 
 <!---START MINTBEAN DOC--->
 
-<h3>Paint App - Becoming Bob Ross:</h3>
+<h3>📖 Paint App - Becoming Bob Ross:</h3>
 <p>Computers have been a boon for creativity and imagination. Digital art has, for decades now, been a medium in its own right; and with the advent of NFTs, the future might be very bright indeed for digital artists. Today, we'll build an app that lets your friends and loved ones express their creative side.</p>
 
 <p>Today, your challenge is to build one of the below:</p>
@@ -42,8 +42,8 @@
 <h4>Advanced applications, for further inspiration. We DO NOT recommend you build these...</h4>
   <li><a href="aggie.io">Aggie.io</a></li>
   <li><a href="https://www.free-coloring-pages.com/online.html">Free Coloring Pages</a></li>
-
-<h4>Best of luck, and make sure to consult the <a href="https://info.mintbean.io/hiring-hackathon-guide">Hiring Hackathon Guide!</a></h4>
+<br>
+<p>Best of luck, and make sure to consult the <a href="https://info.mintbean.io/hiring-hackathon-guide">Hiring Hackathon Guide!</a></p>
 
 <!---END MINTBEAN DOC--->
 
