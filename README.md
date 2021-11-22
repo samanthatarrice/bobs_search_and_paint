@@ -88,6 +88,18 @@
   <li><a href="https://www.maxfosterphotography.com/images/xl/Bob-Ross-Mountain-Summit.jpg">Green forest with river and mountains</a></li>
   <li><a href="https://cdn.shopify.com/s/files/1/1414/9028/products/0afc8fcf7451794a4d4aa41ff4b5a1fc_1024x1024.jpg?v=1574460931">Bob Ross pan painting</a></li>
   <li><a href="https://lh3.googleusercontent.com/proxy/hLi8bLoQqjgos4cyoz9SrgDGmSSxAn494PHJibbgJJi8qM7Gv0hsVQa_AAijyQoTNh3TqvDniNTgwmhyJRlIc-VT">Green room background</a></li>
+  <li><a href="">Bob Ross clipart</a></li>
+  <li><a href="">TV</a></li>
+  <li><a href="">Brushes</a></li>
+  <li><a href="">Color wheel</a></li>
+  <li><a href="">Painted X close button</a></li>
+  <li><a href="">Coloring page for cloud</a></li>
+  <li><a href="">Coloring page for squirrel</a></li>
+  <li><a href="">Coloring page for plant</a></li>
+  <li><a href="">Coloring page for tree</a></li>
+  <li><a href="">All fonts from</a>Google Fonts</li>
+  <li>Social media icons from <a href="">Fontaweseome.com</a></li>
+  <li>All other icons from <a href="">Flaticon.com</a></li>
   
 
 **list assests and resources used here**
@@ -103,7 +115,7 @@
 
 
 
-<h2 align="center">Developer's Contact Info:</h2>
+<h2 align="center">📧 Developer's Contact Info:</h2>
 
 <p align="center">Contact me through Linkedin:</p>
 <div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
