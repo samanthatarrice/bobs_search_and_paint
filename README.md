@@ -26,17 +26,20 @@
 
 <h4>For teams with UX/UI Designers</h4>
 
-<p>A big welcome to our first cohort of UX/UI designers! Your teams are super fortunate to have the vision and finesse that a designer can bring! To make sure you get credit for your work, please include your designs in a shareable format (PDF, Adobe XD or a public Figma is recommended). The best place to include this is on the application's landing page AND on the Github repo's README file. It's recommended that you also share your work on LinkedIn and Twitter, since this counts towards storytelling for you personally.</p>**I did not have a designer, but I do have some experience using Figma. My designs are linked below**
+<p>A big welcome to our first cohort of UX/UI designers! Your teams are super fortunate to have the vision and finesse that a designer can bring! To make sure you get credit for your work, please include your designs in a shareable format (PDF, Adobe XD or a public Figma is recommended). The best place to include this is on the application's landing page AND on the Github repo's README file. It's recommended that you also share your work on LinkedIn and Twitter, since this counts towards storytelling for you personally.</p>
+**I did not have a designer, but I do have some experience using Figma. My designs are linked below**
 
-<p>Here are some achievable application inspirations on Codepen:</p>
-- [LINK PRACTICE](www.google.com)
+<h4>Here are some achievable application inspirations on Codepen:</h4>
+  <li>[HTML5 Drawing Pad](https://codepen.io/HarryGateaux/pen/BApxl)</li>
+  <li>[Drawing from Dots](https://codepen.io/cftflora/pen/xdAIw)</li>
+  <li>[SVG Coloring Book](https://codepen.io/tigt/pen/xZEdoP)</li>
 
 
-<p>Advanced applications, for further inspiration. We DO NOT recommend you build these...</p>
-- Aggie.io
-- Free Coloring Pages
+<h4>Advanced applications, for further inspiration. We DO NOT recommend you build these...</h4>
+  <li>[Aggie.io](https://aggie.io/)</li>
+  <li>[Free Coloring Pages](https://www.free-coloring-pages.com/online.html)</li>
 
-<p>Best of luck, and make sure to consult the Hiring Hackathon Guide!</p>
+<h4>Best of luck, and make sure to consult the [Hiring Hackathon Guide](https://info.mintbean.io/hiring-hackathon-guide)!</h4>
 
 
 What was your motivation?
