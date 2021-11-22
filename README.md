@@ -44,33 +44,39 @@
 
 <h2 align="center">My Interpretation:</h2>
 
-<p align="center">Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more!</p>
+<p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more!</p>
 
-<h3>Design:</h3>
+<h3 align="center">Design:</h3>
 
-images of design
+  <div align="center">images of design</div>
 
-<h3>Technologies Used:</h3>
+<h3 align="center">Technologies Used:</h3>
 
 <div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="50" height="50">
-  <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" width="50" height="50">
-  <img src="https://cdn-icons-png.flaticon.com/512/888/888847.png" width="50" height="50">
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" width="50" height="50">
-  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" width="50" height="50">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="50" height="50">
+  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="70" height="70">
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" width="70" height="70">
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888847.png" width="70" height="70">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" width="70" height="70">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" width="70" height="70">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="70" height="70">
 </div>
 
-<h3>Completed Project</h3>
+<h3 align="center">Assets:</h3>
 
-screenshots of completed project
+<h3 align="center">Completed Project:</h3>
 
-<h3>How To Use</h3>
+  <div align="center">screenshots of completed project</div>
+
+<h3 align="center">How To Use</h3>
 
 instructions here
 
+<h3 align="center">Developer's Contact Info:</h3>
+
+<p align="center">Contact me through Linkedin!</p>
+<div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
 
 
-What problem does it solve?
+<---What problem does it solve?
 What did you learn?
-What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
+What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.--->
