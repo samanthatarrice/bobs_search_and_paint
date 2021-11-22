@@ -91,9 +91,9 @@
   <li><a href="https://4.imimg.com/data4/UQ/GG/MY-22749763/paint-brushes-500x500.jpg">Brushes</a></li>
   <li><a href="https://www.pngkey.com/png/full/619-6190501_hsl-colors-gradient-color-wheel-in-illustrator.png">Color wheel</a></li>
   <li><a href="https://www.onlygfx.com/wp-content/uploads/2018/07/8-grunge-x-brush-stroke-3.png">Painted X close button</a></li>
-  <li><a href="">Coloring page for cloud</a></li>
-  <li><a href="">Coloring page for squirrel</a></li>
-  <li><a href="">Coloring page for plant</a></li>
+  <li><a href="">Coloring page for cloud</a>FIND THIS</li>
+  <li><a href="">Coloring page for squirrel</a>FIND THIS</li>
+  <li><a href="">Coloring page for plant</a>FIND THIS</li>
   <li><a href="https://wanderjobs.com/wp-content/uploads/2020/07/Mountain-Scenery-Coloring-Page-1022x1024.jpg">Coloring page for tree</a></li>
   <li><a href="https://www.shapedivider.app/">Wavy line dividers</a></li>
   <li><a href="https://c.neh.tw/thumb/f/720/comdlpng6947570.jpg">Favicon</a></li>
@@ -106,11 +106,11 @@
 <p>This app is only currently only designed for desktop use. You can open it on any web browser, it is just recommended to not use Internet Explorer:</p>
 <ol>
   <li>Look inside the TV screen to search for the items you see in the white vertical bar (the ☁️, 🐿, 🪴, and 🌲).</li>
-  <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages.</li>
+  <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages:</li>
   <ul>
-    <li>Click on the top knob to open the color picker. Choose a color.</li>
-    <li>Click on a brush to change the stroke size.</li>
-    <li>When you are done, click the black X in the top right to close the painting and search for more items.</li>
+    <li>🌈 Click on the top knob to open the color picker. Choose a color.</li>
+    <li>🖌 Click on a brush to change the stroke size.</li>
+    <li>𝗫 When you are done, click the black X in the top right to close the painting and search for more items.</li>
   </ul>
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
 </ol>
