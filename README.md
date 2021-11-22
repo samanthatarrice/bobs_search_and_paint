@@ -63,9 +63,9 @@
     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="70" height="70">
   </div>
 
-<h3 align="center">Assets:</h3>
+<h3 align="center">Assets & Resources:</h3>
 
-**list assests here**
+**list assests and resources used here**
 
 <h3 align="center">Completed Project:</h3>
 
@@ -75,10 +75,17 @@
 
 **instructions here**
 
+<h3 align="center">Feature Updates:</h3>
+-[ ]Touch events for painting on tablets
+-[ ]Eraser to painting feature
+-[ ]Save option for coloring pages
+
 <h3 align="center">Developer's Contact Info:</h3>
 
 <p align="center">Contact me through Linkedin!</p>
 <div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
+
+
 
 
 <!---
