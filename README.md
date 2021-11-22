@@ -106,6 +106,8 @@
   <p>&#9744; Touch events for painting on tablets</p>
   <p>&#9744; Eraser to painting feature</p>
   <p>&#9744; Save option for coloring pages</p>
+  <p>- [ ] Testing</p>
+  - [ ] 123
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
