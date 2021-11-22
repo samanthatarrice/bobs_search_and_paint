@@ -97,9 +97,9 @@
   <li><a href="">Coloring page for squirrel</a></li>
   <li><a href="">Coloring page for plant</a></li>
   <li><a href="">Coloring page for tree</a></li>
-  <li><a href="">All fonts from</a>Google Fonts</li>
-  <li>Social media icons from <a href="">Fontaweseome.com</a></li>
-  <li>All other icons from <a href="">Flaticon.com</a></li>
+  <li>All fonts from <a href="">Google Fonts</a></li>
+  <li>Social media icons from <a href="www.fontawesome.com">Fontawesome.com</a></li>
+  <li>All other icons from <a href="www.flaticon.com">Flaticon.com</a></li>
   
 
 **list assests and resources used here**
