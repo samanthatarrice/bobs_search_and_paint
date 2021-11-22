@@ -1,7 +1,7 @@
 <h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🌐 Link to App's Landing Page </a></h3>
-<h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h3>
+<h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🖌 Link to Deployed Site </a></h3>
 
 <p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
 
