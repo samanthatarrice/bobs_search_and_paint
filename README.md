@@ -41,9 +41,11 @@
 
 <h4>Best of luck, and make sure to consult the [Hiring Hackathon Guide](https://info.mintbean.io/hiring-hackathon-guide)!</h4>
 
+<h2 align="center">My Interpretation</h2>
 
-What was your motivation?
-Why did you build this project?
+<p>Check out my [landing page](https://samanthatarrice.github.io/bob_landing_page/) to learn more!</p>
+
+
 What problem does it solve?
 What did you learn?
 What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
