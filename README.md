@@ -85,15 +85,18 @@
   <li><a href="https://www.maxfosterphotography.com/images/xl/Bob-Ross-Mountain-Summit.jpg">Green forest with river and mountains</a></li>
   <li><a href="https://cdn.shopify.com/s/files/1/1414/9028/products/0afc8fcf7451794a4d4aa41ff4b5a1fc_1024x1024.jpg?v=1574460931">Bob Ross pan painting</a></li>
   <li><a href="https://lh3.googleusercontent.com/proxy/hLi8bLoQqjgos4cyoz9SrgDGmSSxAn494PHJibbgJJi8qM7Gv0hsVQa_AAijyQoTNh3TqvDniNTgwmhyJRlIc-VT">Green room background</a></li>
-  <li><a href="">Bob Ross clipart</a></li>
-  <li><a href="">TV</a></li>
-  <li><a href="">Brushes</a></li>
+  <li><a href="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1996026/small-basic-wood-wall-shelf-clipart-md.png">Shelf</a></li>
+  <li><a href="https://static.wikia.nocookie.net/xavier-riddle-and-the-secret-museum/images/0/05/Bob_Ross_render.png/revision/latest?cb=20210626153117">Bob Ross clipart</a></li>
+  <li><a href="https://www.pngkit.com/png/full/145-1455078_tv-frame-png-television-from-the-past.png">TV</a></li>
+  <li><a href="https://4.imimg.com/data4/UQ/GG/MY-22749763/paint-brushes-500x500.jpg">Brushes</a></li>
   <li><a href="">Color wheel</a></li>
-  <li><a href="">Painted X close button</a></li>
+  <li><a href="https://www.onlygfx.com/wp-content/uploads/2018/07/8-grunge-x-brush-stroke-3.png">Painted X close button</a></li>
   <li><a href="">Coloring page for cloud</a></li>
   <li><a href="">Coloring page for squirrel</a></li>
   <li><a href="">Coloring page for plant</a></li>
-  <li><a href="">Coloring page for tree</a></li>
+  <li><a href="https://wanderjobs.com/wp-content/uploads/2020/07/Mountain-Scenery-Coloring-Page-1022x1024.jpg">Coloring page for tree</a></li>
+  <li><a href="">Wavy line dividers</a></li>
+  <li><a href="https://c.neh.tw/thumb/f/720/comdlpng6947570.jpg">Favicon</a></li>
   <li>All fonts from <a href="">Google Fonts</a></li>
   <li>Social media icons from <a href="www.fontawesome.com">Fontawesome.com</a></li>
   <li>All other icons from <a href="www.flaticon.com">Flaticon.com</a></li>
@@ -106,8 +109,7 @@
   <p>&#9744; Touch events for painting on tablets</p>
   <p>&#9744; Eraser to painting feature</p>
   <p>&#9744; Save option for coloring pages</p>
-  <p>- [ ] Testing</p>
-  - [ ] 123
+  <p>&#9744; Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
