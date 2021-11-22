@@ -48,21 +48,19 @@
 <h4>Advanced applications, for further inspiration. We DO NOT recommend you build these...</h4>
   <li><a href="aggie.io">Aggie.io</a></li>
   <li><a href="https://www.free-coloring-pages.com/online.html">Free Coloring Pages</a></li>
+  
 <br>
 <p>Best of luck, and make sure to consult the <a href="https://info.mintbean.io/hiring-hackathon-guide">Hiring Hackathon Guide!</a></p>
 
 <!---END MINTBEAN DOC--->
 
-<h2 align="center">👩🏻‍💻 My Interpretation:</h2>
-
-<p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
+<h2 align="center">👩🏻‍💻 Resources and Process:</h2>
+  <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
 <h3 align="center">Design:</h3>
-
   <div align="center">**Add images of design**</div>
 
 <h3 align="center">Technologies Used:</h3>
-
   <div align="center">
     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="70" height="70">
     <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" width="70" height="70">
@@ -72,16 +70,15 @@
     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="70" height="70">
   </div>
 
-<h3 align="center">Resources & Assets:</h3>
-
-<h4>Tutorials:</h4>
+<h3>Tutorials:</h3>
   <li>Tutorial #8, "Fun with HTML Canvas", from <a href="https://javascript30.com/">Javascript in 30</a> by Wes Bos</li>
   <li><a href="https://www.youtube.com/watch?v=3GqUM4mEYKA">Learn HTML5 Canvas By Creating A Drawing App</a> by Dev Ed</li>
 
-<h4>Resources:</h4>
+<h3>Resources:</h3>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
+  <li><a href="https://pixlr.com/x/">PIXLR Photo Editor</a></li>
 
-<h4>Assets:</h4>
+<h3>Assets:</h3>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
   <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgevzoEcDsJI1eXtp29nSHZ3fafFAyBUqOg&usqp=CAU">Winter landscape with pink sky</a></li>
@@ -100,26 +97,20 @@
   <li>All fonts from <a href="">Google Fonts</a></li>
   <li>Social media icons from <a href="www.fontawesome.com">Fontawesome.com</a></li>
   <li>All other icons from <a href="www.flaticon.com">Flaticon.com</a></li>
-  
-
-**list assests and resources used here**
 
 <h2 align="center">❓How To Use:</h2>
 
 **instructions here**
 
 <h2 align="center">🖥 Feature Updates:</h2>
-<p>&#9744; Touch events for painting on tablets</p>
-<p>&#9744; Eraser to painting feature</p>
-<p>&#9744; Save option for coloring pages</p>
-
-
+  <p>&#9744; Touch events for painting on tablets</p>
+  <p>&#9744; Eraser to painting feature</p>
+  <p>&#9744; Save option for coloring pages</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
-
-<p align="center">Contact me through Linkedin:</p>
-<div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
-<p align="center"><a href="https://linkedin.com/in/starrice" target="blank">Sam's Linkedin</a></p>
+  <p align="center">Contact me through Linkedin:</p>
+  <div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
+  <p align="center"><a href="https://linkedin.com/in/starrice" target="blank">Sam's Linkedin</a></p>
                                                                           
 <br>
                                                                           
