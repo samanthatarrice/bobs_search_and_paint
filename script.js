@@ -151,12 +151,12 @@ function paint() {
 
   function finishTouch() {
     isTouching = false;
-    ctx.beginPath();
+    // ctx.beginPath();
   }
 
   function cancelTouch() {
     isTouching = false;
-    ctx.beginPath();
+    // ctx.beginPath();
   }
 
   function drawTouch(e) {
@@ -170,7 +170,7 @@ function paint() {
 
     let xAxis = (e.touches[0].pageX) - 226;
     let yAxis = (e.touches[0].pageY) - 160;
-      // This shows up fine with Chrome dev tool's iPad simulator, but on my android phone the coordinates are off. Also, on my iPad it only shows up as short lines, and doesn't draw a path.
+      // The touches were off, I am guessing because of how the canvas is positioned. I tried to offset the x and y axis this way by just tinkering with it with Chrome Dev Tools. It shows up fine with the dev tool's iPad simulator, but on my android phone the coordinates are off. Also, on my iPad it only shows up as short lines, and doesn't draw a path.
 
     ctx.beginPath();
     ctx.moveTo(xAxis, yAxis);
