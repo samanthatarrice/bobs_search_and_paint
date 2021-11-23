@@ -121,13 +121,13 @@ https://user-images.githubusercontent.com/88330216/142944188-7d25c5c2-e12f-4a6d-
 </ol>
 
 <h2 align="center">🖥 Feature Updates:</h2>
-  <p>&#9744; Video popup and external controls when user clicks on Bob</p>
-  <p>&#9744; Free paint canvas when user clicks on palette</p>
+  <p>☑️ Video popup and external controls when user clicks on Bob</p>
+  <p>&#9744;Free paint canvas when user clicks on palette</p>
   <p>&#9744; Link to info about Bob when user clicks on pan</p>
   <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using</p>
   <p>&#9744; Touch events for painting on tablets</p>
   <p>&#9744; Eraser to painting feature</p>
-  <p>&#9745; Download option for coloring pages</p>
+  <p>☑️ Download option for coloring pages</p>
   <p>&#9744; Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
