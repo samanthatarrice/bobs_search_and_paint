@@ -1,6 +1,6 @@
-findItems();
-
 const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
+
+findItems();
 
 function findItems() {
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
