@@ -443,13 +443,14 @@ footer {
   padding: 0 4rem;
 }
 
-.book-video {
+.bob-video {
+  display: none;
   position: absolute;
-  top: 7%;
+  top: 6%;
   left: 5%;
-  height: 85%;
+  height: 86%;
   width: 72%;
-  z-index: 3;
+  z-index: 5;
 }
 
 .fa-arrow-alt-circle-down {

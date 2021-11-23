@@ -1,8 +1,9 @@
+
+const canvas = document.querySelector('.canvas');
 const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
 
 
 document.addEventListener("DOMContentLoaded", startup);
-// findItems();
 
 function startup() {
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
@@ -23,13 +24,15 @@ function startup() {
       } else if (image.classList.contains('palette')) {
         canvasBackgrounds.style.backgroundImage = 'none';
         document.querySelector('.free-paint').style.display = 'block';
+      } else if (image.classList.contains('bob')) {
+        document.querySelector('.bob-video').style.display = 'block';
+        canvas.style.zIndex = '2';
       }
     
       //Hide search instructions:
       document.querySelector('.search-instructions').style.display = 'none';
 
       paint();
-      // findItems();
     })
   })
 }
@@ -39,7 +42,7 @@ function paint() {
   //Declare variables and make elements visible:
   const closePainting = document.querySelector('.close-painting');
   closePainting.style.display = 'block';
-  const canvas = document.querySelector('.canvas');
+  // const canvas = document.querySelector('.canvas');
   canvas.style.display = 'block';
   // const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
   canvasBackgrounds.style.display = 'block';
@@ -196,6 +199,8 @@ function paint() {
       document.body.classList.remove('dark-background');
       document.querySelector('.paint-instructions').style.display = 'none';
       document.querySelector('.free-paint').style.display = 'none';
+      document.querySelector('.bob-video').style.display = 'none';
+      canvas.style.zIndex = '6';
     })
 
 }
