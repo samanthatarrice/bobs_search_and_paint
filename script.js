@@ -1,8 +1,10 @@
 const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
 
-findItems();
 
-function findItems() {
+document.addEventListener("DOMContentLoaded", startup);
+// findItems();
+
+function startup() {
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
   imagesToFind.forEach(image => {
     image.addEventListener('click', () => {
@@ -132,14 +134,56 @@ function paint() {
     ctx.moveTo(e.offsetX, e.offsetY);
   }
 
-    // MOUSE EVENTS:
-    canvas.addEventListener('mousedown', startStroke);
-    canvas.addEventListener('mouseup', finishStroke);
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseout', resetStroke);
+  // MOUSE EVENTS:
+  canvas.addEventListener('mousedown', startStroke);
+  canvas.addEventListener('mouseup', finishStroke);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseout', resetStroke);
 
-    //TOUCH EVENTS:
 
+  //Set up touch drawing:
+  let isTouching = false;
+
+  function startTouch(e) {
+    isTouching = true;
+    drawTouch(e);
+  }
+
+  function finishTouch() {
+    isTouching = false;
+    // ctx.beginPath();
+  }
+
+  function cancelTouch() {
+    isTouching = false;
+    // ctx.beginPath();
+  }
+
+  function drawTouch(e) {
+    if (!isTouching) return;
+    e.preventDefault();
+    ctx.lineWidth = userSize;
+    ctx.strokeStyle = userColor.value;
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.globalCompositeOperation = 'luminosity';
+
+    let xAxis = (e.touches[0].pageX) - 226;
+    let yAxis = (e.touches[0].pageY) - 160;
+      // I don't exactly know why this works, but since it was super off I just thought to offset each of these values until they matched!
+
+    ctx.beginPath();
+    ctx.moveTo(xAxis, yAxis);
+    ctx.lineTo(xAxis, yAxis);
+    ctx.stroke();
+
+  }
+    // TOUCH EVENTS:
+    canvas.addEventListener('touchstart', startTouch);
+    canvas.addEventListener('touchend', finishTouch);
+    canvas.addEventListener('touchmove', drawTouch);
+    canvas.addEventListener('touchcancel', cancelTouch);
+    
     
     // Close painting:
     closePainting.addEventListener('click', () => {
