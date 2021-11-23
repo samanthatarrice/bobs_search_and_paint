@@ -127,7 +127,7 @@ https://user-images.githubusercontent.com/88330216/142944188-7d25c5c2-e12f-4a6d-
   <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using</p>
   <p>&#9744; Touch events for painting on tablets</p>
   <p>&#9744; Eraser to painting feature</p>
-  <p>&#9744; Save option for coloring pages</p>
+  <p>&#9745; Download option for coloring pages</p>
   <p>&#9744; Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
