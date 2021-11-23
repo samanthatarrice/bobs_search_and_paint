@@ -76,6 +76,7 @@
 <h3>Tutorials:</h3>
   <li>Tutorial #8, "Fun with HTML Canvas", from <a href="https://javascript30.com/">Javascript in 30</a> by Wes Bos</li>
   <li><a href="https://www.youtube.com/watch?v=3GqUM4mEYKA">Learn HTML5 Canvas By Creating A Drawing App</a> by Dev Ed</li>
+  <li><a href="https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa">Vanilla JavaScript save canvas as an image</a> by Chris Bongers of dev.to</li>
 
 <h3>Resources:</h3>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
