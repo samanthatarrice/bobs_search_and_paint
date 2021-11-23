@@ -6,8 +6,6 @@ function findItems() {
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
   imagesToFind.forEach(image => {
     image.addEventListener('click', () => {
-      // image.style.display = 'none';
-        //removed because it seemed better to leave them in the display
       if (image.classList.contains('cloud')) {
         canvasBackgrounds.style.backgroundImage = 'url("images/cloud-background.jpeg")';
         document.querySelector('.search-cloud').style.filter = 'grayscale()';
@@ -17,9 +15,12 @@ function findItems() {
       } else if (image.classList.contains('plant')) { 
         canvasBackgrounds.style.backgroundImage = 'url("images/plant-background.jpeg")';
         document.querySelector('.search-plant').style.filter = 'grayscale()';
-      } else {
+      } else if (image.classList.contains('tree')) {
         canvasBackgrounds.style.backgroundImage = 'url("images/tree-background.jpeg")';
         document.querySelector('.search-tree').style.filter = 'grayscale()';
+      } else if (image.classList.contains('palette')) {
+        canvasBackgrounds.style.backgroundImage = 'none';
+        document.querySelector('.free-paint').style.display = 'block';
       }
     
       //Hide search instructions:
@@ -41,6 +42,8 @@ function paint() {
   // const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
   canvasBackgrounds.style.display = 'block';
   const userColor = document.querySelector('.color-picker');
+  const download = document.querySelector('.fa-arrow-alt-circle-down');
+  download.style.display = 'block';
   const paintingContainer = document.querySelector('.painting-container')
   paintingContainer.style.display = "block";
     //Display all pant tools
@@ -86,8 +89,14 @@ function paint() {
     })
   })
 
-  //Add class for cursor image:
-  
+  //Save Image:
+  download.addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.download = 'download.png';
+    link.href = canvas.toDataURL()
+    link.click();
+    link.delete;
+  })
   
   //Set up drawing on canvas:
   const ctx = canvas.getContext('2d');
@@ -116,7 +125,7 @@ function paint() {
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
     ctx.globalCompositeOperation = 'luminosity';
-    //change this later?
+      //change this?
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
     ctx.beginPath();
@@ -138,10 +147,11 @@ function paint() {
       canvas.style.display = 'none';
       canvasBackgrounds.style.display = 'none';
       paintingContainer.style.display = 'none';
+      download.style.display = 'none';
       document.querySelector('.tv').style.zIndex = '1';
       document.body.classList.remove('dark-background');
       document.querySelector('.paint-instructions').style.display = 'none';
-      // findItems();
+      document.querySelector('.free-paint').style.display = 'none';
     })
 
 }
