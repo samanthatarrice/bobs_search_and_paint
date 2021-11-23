@@ -161,7 +161,7 @@ function paint() {
 
   function drawTouch(e) {
     if (!isTouching) return;
-    e.preventDefault();
+    // e.preventDefault();
     ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
