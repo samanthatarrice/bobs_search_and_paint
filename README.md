@@ -1,14 +1,15 @@
 <h1 align="center">👨🏻‍🎨 Bob Ross' Search & Paint 🎨</h1>
 
+<p float="left" align="center">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/home_with_instructions.png" height="250">
+  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/paint_mode.png" height="250">
+</p>
+
 <p align="center">This was a project I completed for Mintbean's November 2021 Hackathon. I just completed my first hackathon about week prior to this one, but this was my first solo hackathon project. As a new developer I mostly just used HTML, CSS, and JavaScript.</p>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bob_landing_page/" target="_blank">🌐 Link to App's Landing Page </a></h3>
 
 <h3 align="center"><a href="https://samanthatarrice.github.io/bobs_search_and_paint/" target="_blank">🖌 Link to Deployed Site </a></h5>
-<p float="left" align="center">
-  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/home_with_instructions.png" height="250">
-  <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/paint_mode.png" height="250">
-</p>
 
 <h2 align="center">📄 <img src="https://www.techteahouse.com/static/mintbean_logo-05a88f91aef3b5f00207b3bee9e4cc30.png" width="180"> November 2021 Hackathon Project Guildelines:</h2>
 
@@ -57,7 +58,10 @@
   <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more about my inspiration for this project!</p>
 
 <h3 align="center">Design:</h3>
-  <div align="center">**Add images of design**</div>
+  <div align="center">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/app-design.png" height="450">
+    <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/landing-design.png" height="450">
+  </div>
 
 <h3 align="center">Technologies Used:</h3>
   <div align="center">
@@ -72,6 +76,7 @@
 <h3>Tutorials:</h3>
   <li>Tutorial #8, "Fun with HTML Canvas", from <a href="https://javascript30.com/">Javascript in 30</a> by Wes Bos</li>
   <li><a href="https://www.youtube.com/watch?v=3GqUM4mEYKA">Learn HTML5 Canvas By Creating A Drawing App</a> by Dev Ed</li>
+  <li><a href="https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa">Vanilla JavaScript save canvas as an image</a> by Chris Bongers of dev.to</li>
 
 <h3>Resources:</h3>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
@@ -116,13 +121,13 @@ https://user-images.githubusercontent.com/88330216/142944188-7d25c5c2-e12f-4a6d-
 </ol>
 
 <h2 align="center">🖥 Feature Updates:</h2>
-  <p>&#9744; Video popup and external controls when user clicks on Bob</p>
-  <p>&#9744; Free paint canvas when user clicks on palette</p>
-  <p>&#9744; Link to info about Bob when user clicks on pan</p>
-  <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using</p>
+  <p>☑️ Video popup and external controls when user clicks on Bob</p>
+  <p>☑️ Free paint canvas when user clicks on palette</p>
+  <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
+  <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using (this will require changing brush file to individual files for each brush)</p>
   <p>&#9744; Touch events for painting on tablets</p>
-  <p>&#9744; Eraser to painting feature</p>
-  <p>&#9744; Save option for coloring pages</p>
+  <p>&#9744; <strike>Eraser to painting feature</strike> (decided against this since it is supposed to be like a painting)</p>
+  <p>☑️ Download option for coloring pages</p>
   <p>&#9744; Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
