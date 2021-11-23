@@ -126,7 +126,7 @@ https://user-images.githubusercontent.com/88330216/142944188-7d25c5c2-e12f-4a6d-
   <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
   <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using (this will require changing brush file to individual files for each brush)</p>
   <p>&#9744; Touch events for painting on tablets</p>
-  <p>&#9744; ~~Eraser to painting feature~~ (decided against this since it is supposed to be like a painting)</p>
+  <p>&#9744; <strike>Eraser to painting feature</strike> (decided against this since it is supposed to be like a painting)</p>
   <p>☑️ Download option for coloring pages</p>
   <p>&#9744; Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
