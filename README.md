@@ -126,6 +126,15 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
 </ol>
 
+<h2 align="center">⬇️ Developer How To:</h2>
+<p>If you want to use these files on your local device, and have Git installed, simply follow these steps:
+<ol>
+  <li>Tap on the green "Code" button in this repository to copy the SSH key (recommended) or HTTPS URL.</li>
+  <li>Open your terminal and navigate to the directory (cd) you want to save this repository inside of (Example: `cd Projects Folder`).</li>
+  <li>Once you are there type `git clone <this repository's SSH key or URL>` (replace the < > with the key or URL you copied).</li>
+  <li>You should now see the clone inside the directory you saved it in. You can check by typing `ls` inside of the directory where you saved this repository.</li>
+</ol>
+
 <h2 align="center">🖥 Feature Updates:</h2>
   <p>☑️ Video popup and external controls when user clicks on Bob</p>
   <p>☑️ Free paint canvas when user clicks on palette</p>
