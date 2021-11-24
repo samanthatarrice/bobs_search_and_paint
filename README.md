@@ -111,13 +111,16 @@
 
 https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-ab56-056fc0c9e8c5.mp4
 
-<p>This app is only currently only designed for desktop use. You can open it on any web browser, it is just recommended to not use Internet Explorer:</p>
+<p>This app is only currently only designed for desktop use. It will work on some touch screen devices, like an iPad. You can open it on any web browser, it is just recommended to not use Internet Explorer:</p>
 <ol>
   <li>Look inside the TV screen to search for the items you see in the white vertical bar (the ☁️, 🐿, 🪴, and 🌲).</li>
   <li>When you find an image, click on it. You will see a new screen pop up where you can paint to color in the pages:</li>
   <ul>
     <li>🌈 - Click on the top knob to open the color picker. Choose a color.</li>
     <li>🖌 - Click on a brush to change the stroke size.</li>
+    <li>✏️ - Click the eraser if you want to erase parts of you drawing.</li>
+    <li>🗑 - Click on the trash can if you want to delete the whole drawing.</li>
+    <li>⬇️ - Click the down arrow if you want to download.</li>
     <li>𝗫 - When you are done, click the black X in the top right to close the painting and search for more items.</li>
   </ul>
   <li>There are some hidden features as well. See if you can click on other objects to find them!</li>
