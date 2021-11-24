@@ -170,11 +170,62 @@ function paint() {
   download.addEventListener('click', function() {
     const link = document.createElement('a');
     link.download = 'download.png';
-    link.href = canvas.toDataURL();
+    link.href = canvas.toDataURL();f
     link.click();
     link.delete;
   })
     //Not exactly working right. When you cancel downloading, move onto another painting background, then try to cancel downloading again, the box pops up for each time you have gone to a new background. Can exit box by pressing esc.
+
+  // Trying this for touch events: https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
+
+  // Set up touch events for mobile, etc
+  canvas.addEventListener("touchstart", function (e) {
+    mousePos = getTouchPos(canvas, e);
+  var touch = e.touches[0];
+  var mouseEvent = new MouseEvent("mousedown", {
+  clientX: touch.clientX,
+  clientY: touch.clientY
+  });
+  canvas.dispatchEvent(mouseEvent);
+  }, false);
+  canvas.addEventListener("touchend", function (e) {
+  var mouseEvent = new MouseEvent("mouseup", {});
+  canvas.dispatchEvent(mouseEvent);
+  }, false);
+  canvas.addEventListener("touchmove", function (e) {
+  var touch = e.touches[0];
+  var mouseEvent = new MouseEvent("mousemove", {
+  clientX: touch.clientX,
+  clientY: touch.clientY
+  });
+  canvas.dispatchEvent(mouseEvent);
+  }, false);
+
+  // Get the position of a touch relative to the canvas
+  function getTouchPos(canvasDom, touchEvent) {
+    var rect = canvasDom.getBoundingClientRect();
+    return {
+      x: touchEvent.touches[0].clientX - rect.left,
+      y: touchEvent.touches[0].clientY - rect.top
+    };
+  }
+
+  // Prevent scrolling when touching the canvas
+  document.body.addEventListener("touchstart", function (e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
+  document.body.addEventListener("touchend", function (e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
+  document.body.addEventListener("touchmove", function (e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
 
   // //Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
   // let isTouching = false;
