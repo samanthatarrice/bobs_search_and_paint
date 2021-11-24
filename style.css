@@ -9,7 +9,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Sue Ellen Francisco', sans-serif;
-  
 }
 
 .dark-background {
@@ -20,6 +19,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.hide {
+  display: none;
 }
 
 header {
@@ -83,7 +86,7 @@ h1 {
   position: absolute;
   top: 10%;
   left: 35%;
-  font-size: 2rem;
+  font-size: 3vw;
   z-index: 3;
 }
 
@@ -148,7 +151,6 @@ h1 {
   width: 23%;
   bottom: 2%;
   right: 0;
-  /* z-index: 0; */
 }
 
 .sizes {
@@ -165,8 +167,6 @@ h1 {
 
 .sizes div {
   height: 11.5%;
-  /* width: 100%; */
-  /* opacity: 50%; */
   z-index: 7;
   cursor: grab;
 }
@@ -194,10 +194,8 @@ h1 {
 
 .tv {
   width: 100%;
-  /* z-index: 4; */
   z-index: 1;
   position: relative;
-  /*allows you to change z-index*/
 }
 
 .room {
@@ -224,7 +222,6 @@ h1 {
   top: 9.5%;
   right: 38%;
   width: 10%;
-  /* z-index: -5; */
 }
 
 .search-images {
@@ -337,7 +334,6 @@ h2 {
 
 .instructions {
   position: absoute;
-  /* height: 100%; */
 }
 
 .instructions p {
@@ -345,6 +341,10 @@ h2 {
   width: 15%;
   text-align: center;
   line-height: 1.5;
+}
+
+.search-instructions {
+  display: none;
 }
 
 .search-instructions p {
@@ -446,23 +446,37 @@ footer {
 .bob-video {
   display: none;
   position: absolute;
-  top: 6%;
-  left: 5%;
-  height: 86%;
-  width: 72%;
-  z-index: 5;
+  top: 3.5%;
+  left: 2.5%;
+  height: 91%;
+  width: 76.5%;
+  z-index: 7;
 }
 
 .fa-arrow-alt-circle-down {
   display: none;
   position: absolute;
-  top: 36%;
-  right: 7.25%;
+  top: 35%;
+  right: 6.5%;
   z-index: 5;
   background-color: rgb(239, 221, 168);
   padding: 0.5rem;
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
+  cursor: pointer;
+  border: solid rgb(31, 15, 15) 1px;
+  color: rgb(31, 15, 15);
+}
+
+.fa-question-circle {
+  position: absolute;
+  top: 59%;
+  right: 6.5%;
+  z-index: 5;
+  font-size: 2.5vw;
+  background-color: rgb(239, 221, 168);
+  padding: 0.5rem;
+  border-radius: 50%;
   cursor: pointer;
   border: solid rgb(31, 15, 15) 1px;
   color: rgb(31, 15, 15);
@@ -521,7 +535,11 @@ footer {
   .fa-arrow-alt-circle-down {
     right: 7%;
     padding: 0.25rem;
-    font-size: 2.25rem;
+  }
+
+  .fa-question-circle {
+    right: 7%;
+    padding: 0.25rem;
   }
 }
 
@@ -549,7 +567,11 @@ footer {
   .fa-arrow-alt-circle-down {
     top: 35.5%;
     padding: 0.2rem;
-    font-size: 2rem;
+  
+  }
+
+  .fa-question-circle {
+    padding: 0.2rem;
   }
 }
 
@@ -595,9 +617,12 @@ footer {
   }
 
   .fa-arrow-alt-circle-down {
-    top: 35.5%;
-    padding: 0.2rem;
-    font-size: 1.5rem;
+    top: 34%;
+  }
+
+  .fa-question-circle {
+    top: 58%;
+    right: 6.75%;
   }
 }
 
@@ -665,13 +690,6 @@ footer {
 
   .name p {
     font-size: 1.3rem;
-  }
-
-  .fa-arrow-alt-circle-down {
-    right: 6.2%;
-    top: 32%;
-    padding: 0.2rem;
-    font-size: 1.5rem;
   }
 }
 

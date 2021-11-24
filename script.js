@@ -1,50 +1,86 @@
-
+// Global Variables:
 const canvas = document.querySelector('.canvas');
 const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
-
+const closePainting = document.querySelector('.close-painting');
+const bobVideo = document.querySelector('.bob-video');
+const searchInstructions = document.querySelector('.search-instructions');
 
 document.addEventListener("DOMContentLoaded", startup);
 
 function startup() {
+
+  //Toggle instructions:
+  const help = document.querySelector('.fa-question-circle');
+  help.addEventListener('click', () => {
+    if (canvas.style.display === 'block') {
+      const paintInstructions = document.querySelector('.paint-instructions');
+      if (paintInstructions.style.display === 'block') {
+        paintInstructions.style.display = 'none';
+      } else {
+        paintInstructions.style.display = 'block';
+      }
+    } else {
+      // const searchInstructions = document.querySelector('.search-instructions');
+      if (searchInstructions.style.display === 'block') {
+        searchInstructions.style.display = 'none';
+      } else {
+        searchInstructions.style.display = 'block';
+      }
+    } 
+  })
+
+  //Iterate through each findable object to set it's background and change to grayscale in search bar:
   const imagesToFind = Array.from(document.querySelectorAll('.find'));
   imagesToFind.forEach(image => {
     image.addEventListener('click', () => {
       if (image.classList.contains('cloud')) {
         canvasBackgrounds.style.backgroundImage = 'url("images/cloud-background.jpeg")';
         document.querySelector('.search-cloud').style.filter = 'grayscale()';
+        paint()
       } else if (image.classList.contains('squirrel')) { 
         canvasBackgrounds.style.backgroundImage = 'url("images/squirrel-background.jpeg")';
         document.querySelector('.search-squirrel').style.filter = 'grayscale()';
+        paint()
       } else if (image.classList.contains('plant')) { 
         canvasBackgrounds.style.backgroundImage = 'url("images/plant-background.jpeg")';
         document.querySelector('.search-plant').style.filter = 'grayscale()';
+        paint()
       } else if (image.classList.contains('tree')) {
         canvasBackgrounds.style.backgroundImage = 'url("images/tree-background.jpeg")';
         document.querySelector('.search-tree').style.filter = 'grayscale()';
+        paint()
       } else if (image.classList.contains('palette')) {
         canvasBackgrounds.style.backgroundImage = 'none';
         document.querySelector('.free-paint').style.display = 'block';
-      } else if (image.classList.contains('bob')) {
-        document.querySelector('.bob-video').style.display = 'block';
-        canvas.style.zIndex = '2';
+        paint()
       }
-    
-      //Hide search instructions:
-      document.querySelector('.search-instructions').style.display = 'none';
-
-      paint();
+    })
+    //Show video and close but hide other features:
+    image.addEventListener('click', () => {
+      if (image.classList.contains('bob')) {
+        bobVideo.src = 'https://youtube.com/embed/19fZGODNHG4?autoplay=1&mute=1';
+        document.body.classList.add('dark-background');
+        bobVideo.style.display = 'block';
+        closePainting.style.display = 'block';
+        help.style.display = 'none';
+        searchInstructions.style.display = 'none';
+        closePainting.addEventListener('click', () => {
+          bobVideo.style.display = 'none';
+          document.querySelector('.bob-video').src = '';
+          help.style.display = 'block';
+        })
+      }
     })
   })
 }
 
 function paint() {
+  //Hide search instructions if open:
+  searchInstructions.style.display = 'none';
 
   //Declare variables and make elements visible:
-  const closePainting = document.querySelector('.close-painting');
   closePainting.style.display = 'block';
-  // const canvas = document.querySelector('.canvas');
   canvas.style.display = 'block';
-  // const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
   canvasBackgrounds.style.display = 'block';
   const userColor = document.querySelector('.color-picker');
   const download = document.querySelector('.fa-arrow-alt-circle-down');
@@ -55,10 +91,6 @@ function paint() {
 
   //Darken background:
   document.body.classList.add('dark-background');
-
-  //Display paint instructions:
-  document.querySelector('.paint-instructions').style.display = 'block';
-
   //Bring TV to foreground so it covers the coloring page but doesn't cover the canvas:
   document.querySelector('.tv').style.zIndex = '5';
 
@@ -92,15 +124,6 @@ function paint() {
       }
       return userSize;
     })
-  })
-
-  //Save Image:
-  download.addEventListener('click', function() {
-    const link = document.createElement('a');
-    link.download = 'download.png';
-    link.href = canvas.toDataURL()
-    link.click();
-    link.delete;
   })
   
   //Set up drawing on canvas:
@@ -143,8 +166,16 @@ function paint() {
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('mouseout', resetStroke);
 
+  //Save Image:
+  download.addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.download = 'download.png';
+    link.href = canvas.toDataURL();
+    link.click();
+    link.delete;
+  })
 
-  //Set up touch drawing:
+  //Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
   let isTouching = false;
 
   function startTouch(e) {
@@ -164,7 +195,8 @@ function paint() {
 
   function drawTouch(e) {
     if (!isTouching) return;
-    // e.preventDefault();
+    e.preventDefault();
+    e.stopPropagation();
     ctx.lineWidth = userSize;
     ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
@@ -187,21 +219,21 @@ function paint() {
     canvas.addEventListener('touchmove', drawTouch);
     canvas.addEventListener('touchcancel', cancelTouch);
     
-    
-    // Close painting:
-    closePainting.addEventListener('click', () => {
-      closePainting.style.display = 'none';
-      canvas.style.display = 'none';
-      canvasBackgrounds.style.display = 'none';
-      paintingContainer.style.display = 'none';
-      download.style.display = 'none';
-      document.querySelector('.tv').style.zIndex = '1';
-      document.body.classList.remove('dark-background');
-      document.querySelector('.paint-instructions').style.display = 'none';
-      document.querySelector('.free-paint').style.display = 'none';
-      document.querySelector('.bob-video').style.display = 'none';
-      canvas.style.zIndex = '6';
-    })
+  // Close painting:
+  closePainting.addEventListener('click', () => {
+    closePainting.style.display = 'none';
+    canvas.style.display = 'none';
+    canvasBackgrounds.style.display = 'none';
+    paintingContainer.style.display = 'none';
+    download.style.display = 'none';
+    bobVideo.style.display = 'none';
+    canvas.style.zIndex = '6';
+    document.querySelector('.tv').style.zIndex = '1';
+    document.body.classList.remove('dark-background');
+    document.querySelector('.paint-instructions').style.display = 'none';
+    document.querySelector('.free-paint').style.display = 'none';
+  
+  })
 
 }
 
