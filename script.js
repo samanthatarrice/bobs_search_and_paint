@@ -105,22 +105,50 @@ function paint() {
 
   //Select brush size:
   let userSize = '20';
-  const sizes = Array.from(document.querySelectorAll('.sizes div'));
+  const sizes = Array.from(document.querySelectorAll('.brush-sizes img'));
+  const large = document.querySelector('.large');
+  const medium = document.querySelector('.medium');
+  const small = document.querySelector('.small');
+  const extraSm = document.querySelector('.extra-sm');
   sizes.forEach(size => {
     size.addEventListener('click', () => {
       canvas.classList.remove(`size${userSize}`);
-      if(size.classList.contains('large')) {
+      if (size.classList.contains('large')) {
+        if (medium.style.visibility === 'hidden' | small.style.visibility === 'hidden' | extraSm.style.visibility === 'hidden') {
+          medium.style.visibility = 'visible';
+          small.style.visibility = 'visible';
+          extraSm.style.visibility = 'visible';
+        }
         userSize = '40';
         canvas.classList.add(`size${userSize}`);
-      } else if (size.classList.contains('small')) {
-        userSize = '8';
-        canvas.classList.add(`size${userSize}`);
-      } else if (size.classList.contains('extra-sm')) {
-        userSize = '3';
-        canvas.classList.add(`size${userSize}`);
-      } else {
+        large.style.visibility = 'hidden';
+      } else if (size.classList.contains('medium')) {
+        if (large.style.visibility === 'hidden' | small.style.visibility === 'hidden' | extraSm.style.visibility === 'hidden') {
+          large.style.visibility = 'visible';
+          small.style.visibility = 'visible';
+          extraSm.style.visibility = 'visible';
+        }
         userSize = '20';
         canvas.classList.add(`size${userSize}`);
+        medium.style.visibility = 'hidden';
+      } else if (size.classList.contains('small')) {
+        if (medium.style.visibility === 'hidden' | large.style.visibility === 'hidden' | extraSm.style.visibility === 'hidden') {
+          medium.style.visibility = 'visible';
+          large.style.visibility = 'visible';
+          extraSm.style.visibility = 'visible';
+        }
+        userSize = '8';
+        canvas.classList.add(`size${userSize}`);
+        small.style.visibility = 'hidden';
+      } else {
+        if (medium.style.visibility === 'hidden' | small.style.visibility === 'hidden' | large.style.visibility === 'hidden') {
+          medium.style.visibility = 'visible';
+          small.style.visibility = 'visible';
+          large.style.visibility = 'visible';
+        }
+        userSize = '3';
+        canvas.classList.add(`size${userSize}`);
+        extraSm.style.visibility = 'hidden';
       }
       return userSize;
     })
@@ -170,7 +198,7 @@ function paint() {
   download.addEventListener('click', function() {
     const link = document.createElement('a');
     link.download = 'download.png';
-    link.href = canvas.toDataURL();f
+    link.href = canvas.toDataURL();
     link.click();
     link.delete;
   })
@@ -181,25 +209,27 @@ function paint() {
   // Set up touch events for mobile, etc
   canvas.addEventListener("touchstart", function (e) {
     mousePos = getTouchPos(canvas, e);
-  var touch = e.touches[0];
-  var mouseEvent = new MouseEvent("mousedown", {
-  clientX: touch.clientX,
-  clientY: touch.clientY
-  });
+    var touch = e.touches[0];
+    var mouseEvent = new MouseEvent("mousedown", {
+    clientX: touch.clientX,
+    clientY: touch.clientY
+    });
+
   canvas.dispatchEvent(mouseEvent);
-  }, false);
+    }, false);
+
   canvas.addEventListener("touchend", function (e) {
-  var mouseEvent = new MouseEvent("mouseup", {});
-  canvas.dispatchEvent(mouseEvent);
-  }, false);
-  canvas.addEventListener("touchmove", function (e) {
-  var touch = e.touches[0];
-  var mouseEvent = new MouseEvent("mousemove", {
-  clientX: touch.clientX,
-  clientY: touch.clientY
-  });
-  canvas.dispatchEvent(mouseEvent);
-  }, false);
+    var mouseEvent = new MouseEvent("mouseup", {});
+    canvas.dispatchEvent(mouseEvent);
+    }, false);
+    canvas.addEventListener("touchmove", function (e) {
+    var touch = e.touches[0];
+    var mouseEvent = new MouseEvent("mousemove", {
+    clientX: touch.clientX,
+    clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+    }, false);
 
   // Get the position of a touch relative to the canvas
   function getTouchPos(canvasDom, touchEvent) {
@@ -215,17 +245,17 @@ function paint() {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, { passive: false });
   document.body.addEventListener("touchend", function (e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, { passive: false });
   document.body.addEventListener("touchmove", function (e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, { passive: false });
 
   // //Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
   // let isTouching = false;
@@ -277,7 +307,11 @@ function paint() {
     closePainting.style.display = 'none';
     canvas.style.display = 'none';
     canvasBackgrounds.style.display = 'none';
+    // canvas.width = canvas.width;
     paintingContainer.style.display = 'none';
+    sizes.forEach(size => {
+      size.style.visibility = 'visible';
+    })
     download.style.display = 'none';
     bobVideo.style.display = 'none';
     canvas.style.zIndex = '6';
