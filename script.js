@@ -174,50 +174,52 @@ function paint() {
     link.click();
     link.delete;
   })
+    //Not exactly working right. When you cancel downloading, move onto another painting background, then try to cancel downloading again, the box pops up for each time you have gone to a new background. Can exit box by pressing esc.
 
-  //Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
-  let isTouching = false;
+  // //Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
+  // let isTouching = false;
 
-  function startTouch(e) {
-    isTouching = true;
-    drawTouch(e);
-  }
+  // function startTouch(e) {
+  //   isTouching = true;
+  //   drawTouch(e);
+  // }
 
-  function finishTouch() {
-    isTouching = false;
-    // ctx.beginPath();
-  }
+  // function finishTouch() {
+  //   isTouching = false;
+  //   // ctx.beginPath();
+  // }
 
-  function cancelTouch() {
-    isTouching = false;
-    // ctx.beginPath();
-  }
+  // function cancelTouch() {
+  //   isTouching = false;
+  //   // ctx.beginPath();
+  // }
 
-  function drawTouch(e) {
-    if (!isTouching) return;
-    e.preventDefault();
-    e.stopPropagation();
-    ctx.lineWidth = userSize;
-    ctx.strokeStyle = userColor.value;
-    ctx.lineJoin = 'round';
-    ctx.lineCap = 'round';
-    ctx.globalCompositeOperation = 'luminosity';
+  // function drawTouch(e) {
+  //   if (!isTouching) return;
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   ctx.lineWidth = userSize;
+  //   ctx.strokeStyle = userColor.value;
+  //   ctx.lineJoin = 'round';
+  //   ctx.lineCap = 'round';
+  //   ctx.globalCompositeOperation = 'luminosity';
 
-    let xAxis = (e.touches[0].pageX) - 226;
-    let yAxis = (e.touches[0].pageY) - 160;
-      // The touches were off, I am guessing because of how the canvas is positioned. I tried to offset the x and y axis this way by just tinkering with it with Chrome Dev Tools. It shows up fine with the dev tool's iPad simulator, but on my android phone the coordinates are off. Also, on my iPad it only shows up as short lines, and doesn't draw a path.
+  //   let xAxis = (e.touches[0].pageX) - 226;
+  //   let yAxis = (e.touches[0].pageY) - 160;
+  //     // The touches were off, I am guessing because of how the canvas is positioned. I tried to offset the x and y axis this way by just tinkering with it with Chrome Dev Tools. It shows up fine with the dev tool's iPad simulator, but on my android phone the coordinates are off. Also, on my iPad it only shows up as short lines, and doesn't draw a path.
 
-    ctx.beginPath();
-    ctx.moveTo(xAxis, yAxis);
-    ctx.lineTo(xAxis, yAxis);
-    ctx.stroke();
+  //   ctx.beginPath();
+  //   ctx.moveTo(xAxis, yAxis);
+  //   ctx.lineTo(xAxis, yAxis);
+  //   ctx.stroke();
 
-  }
-    // TOUCH EVENTS:
-    canvas.addEventListener('touchstart', startTouch);
-    canvas.addEventListener('touchend', finishTouch);
-    canvas.addEventListener('touchmove', drawTouch);
-    canvas.addEventListener('touchcancel', cancelTouch);
+  // }
+  
+  // // TOUCH EVENTS:
+  // canvas.addEventListener('touchstart', startTouch);
+  // canvas.addEventListener('touchend', finishTouch);
+  // canvas.addEventListener('touchmove', drawTouch);
+  // canvas.addEventListener('touchcancel', cancelTouch);
     
   // Close painting:
   closePainting.addEventListener('click', () => {
@@ -232,7 +234,6 @@ function paint() {
     document.body.classList.remove('dark-background');
     document.querySelector('.paint-instructions').style.display = 'none';
     document.querySelector('.free-paint').style.display = 'none';
-  
   })
 
 }

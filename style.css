@@ -407,6 +407,25 @@ h2 {
   top: 80%;
 }
 
+.landing-page {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 0.25vw 2vw;
+  /* border-radius: 15px; */
+  color: black;
+  border: 0.3vw solid black;
+  text-shadow: 4px 4px 4px white;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.landing-page:hover {
+  text-shadow: none;
+  box-shadow: none;
+}
+
 /* FOOTER SECTION */
 
 footer {
