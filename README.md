@@ -138,13 +138,14 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
 <h2 align="center">🖥 Feature Updates:</h2>
   <p>☑️ Video popup and external controls when user clicks on Bob</p>
   <p>☑️ Free paint canvas when user clicks on palette</p>
-  <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
   <p>☑️ Add effect to brushes when user chooses one so they know which one they are using (this will require changing brush file to individual files for each brush)</p>
   <p>☑️ Touch events for painting on tablets</p>
-  <p>&#9744; Make touch events work on mobile too, and refactor to match mouse events.</p>
   <p>☑️ Eraser to painting feature <strike>(decided against this since it is supposed to be like a painting)</strike> </p>
   <p>☑️ Download option for coloring pages</p>
   <p>☑️ Deploy through another site (e.g. Netlify) to see if it loads faster</p>
+  <p>&#9744; Make touch events work on mobile too, and refactor to match mouse events</p>
+  <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
+  <p>&#9744; Fix issue with download where popup shows more than once (once for every coloring page visited) after you choose cancel</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
