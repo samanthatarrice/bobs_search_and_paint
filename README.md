@@ -106,7 +106,7 @@
 
 <h2 align="center">❓How To Use:</h2>
 
-https://user-images.githubusercontent.com/88330216/142944188-7d25c5c2-e12f-4a6d-9882-6179f58e0674.mp4
+https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-ab56-056fc0c9e8c5.mp4
 
 <p>This app is only currently only designed for desktop use. You can open it on any web browser, it is just recommended to not use Internet Explorer:</p>
 <ol>
