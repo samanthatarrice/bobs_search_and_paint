@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", startup);
 function startup() {
 
   //Toggle instructions:
-  const help = document.querySelector('.fa-question-circle');
+  const help = document.querySelector('.fa-question');
   help.addEventListener('click', () => {
     if (canvas.style.display === 'block') {
       const paintInstructions = document.querySelector('.paint-instructions');
@@ -83,8 +83,12 @@ function paint() {
   canvas.style.display = 'block';
   canvasBackgrounds.style.display = 'block';
   const userColor = document.querySelector('.color-picker');
-  const download = document.querySelector('.fa-arrow-alt-circle-down');
-  download.style.display = 'block';
+  const download = document.querySelector('.fa-download');
+  download.style.visibility = 'visible';
+  const eraseParts = document.querySelector('.fa-eraser');
+  eraseParts.style.visibility = 'visible';
+  const eraseAll = document.querySelector('.fa-trash');
+  eraseAll.style.visibility = 'visible';
   const paintingContainer = document.querySelector('.painting-container')
   paintingContainer.style.display = "block";
     //Display all pant tools
@@ -103,8 +107,11 @@ function paint() {
       canvas.height = canvas.width * 0.792;
     })
 
+
+
   //Select brush size:
   let userSize = '20';
+  let mode = 'brush';
   const sizes = Array.from(document.querySelectorAll('.brush-sizes img'));
   const large = document.querySelector('.large');
   const medium = document.querySelector('.medium');
@@ -112,6 +119,7 @@ function paint() {
   const extraSm = document.querySelector('.extra-sm');
   sizes.forEach(size => {
     size.addEventListener('click', () => {
+      mode = 'brush';
       canvas.classList.remove(`size${userSize}`);
       if (size.classList.contains('large')) {
         if (medium.style.visibility === 'hidden' | small.style.visibility === 'hidden' | extraSm.style.visibility === 'hidden') {
@@ -120,6 +128,7 @@ function paint() {
           extraSm.style.visibility = 'visible';
         }
         userSize = '40';
+        canvas.classList.remove('eraser');
         canvas.classList.add(`size${userSize}`);
         large.style.visibility = 'hidden';
       } else if (size.classList.contains('medium')) {
@@ -129,6 +138,7 @@ function paint() {
           extraSm.style.visibility = 'visible';
         }
         userSize = '20';
+        canvas.classList.remove('eraser');
         canvas.classList.add(`size${userSize}`);
         medium.style.visibility = 'hidden';
       } else if (size.classList.contains('small')) {
@@ -138,6 +148,7 @@ function paint() {
           extraSm.style.visibility = 'visible';
         }
         userSize = '8';
+        canvas.classList.remove('eraser');
         canvas.classList.add(`size${userSize}`);
         small.style.visibility = 'hidden';
       } else {
@@ -147,12 +158,23 @@ function paint() {
           large.style.visibility = 'visible';
         }
         userSize = '3';
+        canvas.classList.remove('eraser');
         canvas.classList.add(`size${userSize}`);
         extraSm.style.visibility = 'hidden';
       }
       return userSize;
     })
   })
+
+  //Declare eraser mode on click:
+  eraseParts.addEventListener('click', () => { 
+    mode = 'eraser';
+    canvas.classList.add('eraser');
+    large.style.visibility = 'visible';
+    medium.style.visibility = 'visible';
+    small.style.visibility = 'visible';
+    extraSm.style.visibility = 'visible';
+  });
   
   //Set up drawing on canvas:
   const ctx = canvas.getContext('2d');
@@ -180,13 +202,21 @@ function paint() {
     ctx.strokeStyle = userColor.value;
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
-    ctx.globalCompositeOperation = 'luminosity';
-      //change this?
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(e.offsetX, e.offsetY);
+    if (mode==='brush') {
+      ctx.globalCompositeOperation = 'hue';
+        //change this?
+      ctx.lineTo(e.offsetX, e.offsetY);
+      ctx.stroke();
+      ctx.moveTo(e.offsetX, e.offsetY);
+    } else {
+      ctx.globalCompositeOperation="destination-out";
+      ctx.arc(e.offsetX,e.offsetY,8,0,Math.PI*2,false);
+      ctx.fill();
+    }
+
   }
+
 
   // MOUSE EVENTS:
   canvas.addEventListener('mousedown', startStroke);
@@ -203,6 +233,12 @@ function paint() {
     link.delete;
   })
     //Not exactly working right. When you cancel downloading, move onto another painting background, then try to cancel downloading again, the box pops up for each time you have gone to a new background. Can exit box by pressing esc.
+
+
+  //Delete whole painting:
+  eraseAll.addEventListener('click', () => {
+    canvas.width = canvas.width;
+  })
 
   // Trying this for touch events: https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
 
@@ -307,12 +343,14 @@ function paint() {
     closePainting.style.display = 'none';
     canvas.style.display = 'none';
     canvasBackgrounds.style.display = 'none';
-    // canvas.width = canvas.width;
+    canvas.classList.remove('eraser');
     paintingContainer.style.display = 'none';
     sizes.forEach(size => {
       size.style.visibility = 'visible';
     })
-    download.style.display = 'none';
+    download.style.visibility = 'hidden';
+    eraseParts.style.visibility = 'hidden';
+    eraseAll.style.visibility = 'hidden';
     bobVideo.style.display = 'none';
     canvas.style.zIndex = '6';
     document.querySelector('.tv').style.zIndex = '1';

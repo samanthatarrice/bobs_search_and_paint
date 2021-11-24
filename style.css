@@ -11,6 +11,8 @@ body {
   font-family: 'Sue Ellen Francisco', sans-serif;
 }
 
+/* PAINTING MODAL BACKGROUND */
+
 .dark-background {
   background: linear-gradient(
     rgba(0, 0, 0, 0.3), 
@@ -21,9 +23,20 @@ body {
   background-attachment: fixed;
 }
 
-.hide {
+.close-painting {
   display: none;
+  position: absolute;
+  width: 5%;
+  top: 12%;
+  right: 13%;
+  cursor: pointer;
 }
+
+/* .hide {
+  display: none;
+} */
+
+/* HEADING */
 
 header {
   margin: 3rem 0 1rem;
@@ -51,202 +64,12 @@ h1 {
   line-height: 1;
 }
 
+/* MAIN TV DISPLAY */
+
 .main-display {
   position: relative;
   width: 62%;
   margin: 0 auto;
-}
-
-.canvas-backgrounds {
-  display: none;
-  width: 55vw;
-  height: calc(70vw * (47/80));
-  position: absolute;
-  z-index: 3;
-  background: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.canvas {
-  display: none;
-  background-color: white;
-  opacity: 40%;
-  position: absolute;
-  top: 7.2%;
-  left: 5%;
-  z-index: 6;
-  border-radius: 160px/130px;
-  box-shadow: 30px 30px 30px white, -30px -30px 30px white;
-}
-
-.free-paint {
-  display: none;
-  position: absolute;
-  top: 10%;
-  left: 35%;
-  font-size: 3vw;
-  z-index: 3;
-}
-
-.size40 {
-  cursor: url(images/40.png) 20 20, auto;
-}
-
-.size8 {
-  cursor: url(images/8.png) 4 4, auto;
-}
-
-.size3 {
-  cursor: url(images/3.png) 1.5 1.5, auto;
-}
-
-.size20 {
-  cursor: url(images/20.png) 10 10, auto;
-}
-
-.painting-container {
-  display: none; 
-}
-
-.color-wheel {
-  position: absolute;
-  z-index: 6;
-  width: 7.2%;
-  top: 17.2%;
-  right: 5.5%;
-  opacity: 70%;
-  border-radius: 50%;
-}
-
-.color-picker {
-  position: absolute;
-  z-index: 7;
-  top: 16%;
-  right: 4.5%;
-  width: 9%;
-  height: 13%;
-  opacity: 0;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* .large {
-  position: absolute;
-  z-index: 6;
-  bottom: 0;
-  right: 2%;
-  width: 20%;
-  filter: drop-shadow(-8px -5px 5px rgb(42, 38, 38));
-
-} */
-
-.brush-sizes {
-  position: absolute;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: end;
-  z-index: 6;
-  width: 22%;
-  height: 33%;
-  right: 1%;
-  bottom: 1%;
-}
-
-.brush-sizes img {
-  cursor: grab;
-  filter: drop-shadow(-8px -2px 5px rgba(42, 38, 38, 0.9));
-}
-
-.brush-sizes img:nth-of-type(1) {
-  height: 100%;
-  width: auto;
-}
-
-.brush-sizes img:nth-of-type(2),.brush-sizes img:nth-of-type(3), .brush-sizes img:nth-of-type(4) {
-  height: 90%;
-  width: auto;
-}
-
-/* .brushes-shadow {
-  position: absolute;
-  transform: rotate(270deg);
-  width: 23%;
-  z-index: 6;
-  bottom: 1.5%;
-  right: 0;
-  filter: grayscale() drop-shadow(-8px -5px 5px rgb(42, 38, 38));
-  opacity: 0.8;
-}
-
-.brushes {
-  position: absolute;
-  z-index: 6;
-  transform: rotate(270deg);
-  width: 23%;
-  bottom: 2%;
-  right: 0;
-} */
-
-/* .sizes {
-  position: absolute;
-  width: 23%;
-  height: 26%;
-  z-index: 6;
-  bottom: 5.5%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
-/* .sizes {
-  position: absolute;
-  width: 23%;
-  height: 26%;
-  z-index: 6;
-  bottom: 5.5%;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.sizes div {
-  height: 11.5%;
-  z-index: 7;
-  cursor: grab;
-}
-
-.sizes div:nth-child(1) {
-  height: 28%;
-}
-
-.sizes div:nth-child(2) {
-  height: 15%;
-}
-
-.sizes div:nth-child(4) {
-  height: 18%;
-} */
-
-
-.close-painting {
-  display: none;
-  position: absolute;
-  width: 5%;
-  top: 12%;
-  right: 13%;
-  cursor: pointer;
-}
-
-.tv {
-  width: 100%;
-  z-index: 1;
-  position: relative;
 }
 
 .room {
@@ -381,7 +204,123 @@ h2 {
   bottom: 18%;
 }
 
-/* INSTRUCTIONS SECTION */
+/* CANVAS, COLORING BACKGROUNDS, & PAINT TOOLS */
+
+.canvas-backgrounds {
+  display: none;
+  width: 55vw;
+  height: calc(70vw * (47/80));
+  position: absolute;
+  z-index: 3;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.canvas {
+  display: none;
+  background-color: white;
+  opacity: 40%;
+  position: absolute;
+  top: 7.2%;
+  left: 5%;
+  z-index: 6;
+  border-radius: 160px/130px;
+  box-shadow: 30px 30px 30px white, -30px -30px 30px white;
+}
+
+.free-paint {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  font-size: 3vw;
+  z-index: 3;
+}
+
+.painting-container {
+  display: none; 
+}
+
+.color-wheel {
+  position: absolute;
+  z-index: 6;
+  width: 7.2%;
+  top: 17.2%;
+  right: 5.5%;
+  opacity: 70%;
+  border-radius: 50%;
+}
+
+.color-picker {
+  position: absolute;
+  z-index: 7;
+  top: 16%;
+  right: 4.5%;
+  width: 9%;
+  height: 13%;
+  opacity: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.brush-sizes {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: end;
+  z-index: 6;
+  width: 20%;
+  height: 33%;
+  right: 1%;
+  bottom: 1%;
+}
+
+.brush-sizes img {
+  cursor: grab;
+  filter: drop-shadow(-8px -2px 5px rgba(42, 38, 38, 0.9));
+}
+
+.brush-sizes img:nth-of-type(1) {
+  height: 100%;
+  width: auto;
+}
+
+.brush-sizes img:nth-of-type(2),.brush-sizes img:nth-of-type(3), .brush-sizes img:nth-of-type(4) {
+  height: 90%;
+  width: auto;
+}
+
+.size40 {
+  cursor: url(images/40.png) 20 20, auto;
+}
+
+.size8 {
+  cursor: url(images/8.png) 4 4, auto;
+}
+
+.size3 {
+  cursor: url(images/3.png) 1.5 1.5, auto;
+}
+
+.size20 {
+  cursor: url(images/20.png) 10 10, auto;
+}
+
+.eraser {
+  cursor: url(images/eraser.png) 10 28, auto;
+}
+
+.tv {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+/* INSTRUCTIONS */
 
 .instructions {
   position: absoute;
@@ -523,19 +462,74 @@ footer {
   z-index: 7;
 }
 
-.fa-arrow-alt-circle-down {
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 6.75%;
+  top: 35%;
+  z-index: 5;
+  height: 30%;
+}
+
+.buttons i {
+  font-size: 1.5vw;
+  background-color: rgb(239, 221, 168);
+  border: solid 0.3vw rgb(239, 221, 168);
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: bottom;
+  color: rgb(31, 15, 15);
+  padding: 0.5vw;
+  color: rgb(239, 221, 168);
+  background-color: rgb(31, 15, 15);
+  cursor: pointer;
+}
+
+.buttons i:nth-of-type(1), .buttons i:nth-of-type(2), .buttons i:nth-of-type(3) {
+  visibility: hidden;
+}
+
+/* .fa-download {
   display: none;
   position: absolute;
-  top: 35%;
+  top: 34%;
   right: 6.5%;
   z-index: 5;
-  background-color: rgb(239, 221, 168);
-  padding: 0.5rem;
+  color: rgb(239, 221, 168);
+  padding: 0.62vw;
   border-radius: 50%;
-  font-size: 2.5vw;
-  cursor: pointer;
-  border: solid rgb(31, 15, 15) 1px;
-  color: rgb(31, 15, 15);
+  font-size: 1.3vw;
+  border: solid rgb(239, 221, 168) 0.4vw;
+  background-color: rgb(31, 15, 15);
+}
+
+.fa-eraser {
+  position: absolute;
+  top: 41%;
+  right: 6.5%;
+  z-index: 5;
+  color: rgb(239, 221, 168);
+  padding: 0.62vw;
+  border-radius: 50%;
+  font-size: 1.3vw;
+  border: solid rgb(239, 221, 168) 0.4vw;
+  background-color: rgb(31, 15, 15);
+}
+
+.fa-trash {
+  position: absolute;
+  top: 50%;
+  right: 6.5%;
+  z-index: 5;
+  color: rgb(239, 221, 168);
+  padding: 0.62vw;
+  border-radius: 50%;
+  font-size: 1.3vw;
+  border: solid rgb(239, 221, 168) 0.4vw;
+  background-color: rgb(31, 15, 15);
+  
 }
 
 .fa-question-circle {
@@ -548,9 +542,8 @@ footer {
   padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
-  border: solid rgb(31, 15, 15) 1px;
   color: rgb(31, 15, 15);
-}
+} */
 
 /* MEDIA QUERIES */
 
@@ -602,7 +595,7 @@ footer {
     top: 64%;
   }
 
-  .fa-arrow-alt-circle-down {
+  /* .fa-arrow-alt-circle-down {
     right: 7%;
     padding: 0.25rem;
   }
@@ -610,7 +603,7 @@ footer {
   .fa-question-circle {
     right: 7%;
     padding: 0.25rem;
-  }
+  } */
 
   .canvas {
     border-radius: 100px/80px;
@@ -638,7 +631,7 @@ footer {
     border-radius: 110px/90px;
   } */
 
-  .fa-arrow-alt-circle-down {
+  /* .fa-arrow-alt-circle-down {
     top: 35.5%;
     padding: 0.2rem;
   
@@ -646,7 +639,7 @@ footer {
 
   .fa-question-circle {
     padding: 0.2rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -690,14 +683,14 @@ footer {
     top: 42%;
   }
 
-  .fa-arrow-alt-circle-down {
+  /* .fa-arrow-alt-circle-down {
     top: 34%;
   }
 
   .fa-question-circle {
     top: 58%;
     right: 6.75%;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
