@@ -80,7 +80,10 @@
 
 <h3>Resources:</h3>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
+  <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">Using Touch Events with HTML5 Canvas</a>by Ben Centra</li>
+  <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">HTML5 Canvas eraser tool without overdraw white color</a>from Stackoverflow</li>
   <li><a href="https://pixlr.com/x/">PIXLR Photo Editor</a></li>
+  
 
 <h3>Assets:</h3>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
@@ -124,9 +127,10 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
   <p>☑️ Video popup and external controls when user clicks on Bob</p>
   <p>☑️ Free paint canvas when user clicks on palette</p>
   <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
-  <p>&#9744; Add effect to brushes when user chooses one so they know which one they are using (this will require changing brush file to individual files for each brush)</p>
-  <p>&#9744; Touch events for painting on tablets</p>
-  <p>&#9744; <strike>Eraser to painting feature</strike> (decided against this since it is supposed to be like a painting)</p>
+  <p>☑️ Add effect to brushes when user chooses one so they know which one they are using (this will require changing brush file to individual files for each brush)</p>
+  <p>☑️ Touch events for painting on tablets</p>
+  <p>&#9744; Make touch events work on mobile too, and refactor to match mouse events.</p>
+  <p>☑️ Eraser to painting feature <strike>(decided against this since it is supposed to be like a painting)</strike> </p>
   <p>☑️ Download option for coloring pages</p>
   <p>☑️ Deploy through another site (e.g. Netlify) to see if it loads faster</p>
 
