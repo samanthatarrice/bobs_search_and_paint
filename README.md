@@ -150,6 +150,9 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
   <p>&#9744; Make touch events work on mobile too, and refactor to match mouse events</p>
   <p>&#9744; Video pop-up behind TV of read-aloud when user clicks on Bob (with external controls)</p>
   <p>&#9744; Fix issue with download where popup shows more than once (once for every coloring page visited) after you choose cancel</p>
+  <p>&#9744; Create loading screen with setTimeout so user can't see images loading</p>
+  <p>&#9744; Add more animations to app and landing page (button)</p>
+  <p>&#9744; Make canvas bigger on smaller screens</p>
 
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
