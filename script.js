@@ -1,5 +1,5 @@
 // Global Variables:
-const canvas = document.querySelector('.canvas');
+const canvas = document.querySelector('#canvas');
 const canvasBackgrounds = document.querySelector('.canvas-backgrounds');
 const closePainting = document.querySelector('.close-painting');
 const bobVideo = document.querySelector('.bob-video');
