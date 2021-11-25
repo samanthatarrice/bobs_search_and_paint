@@ -80,8 +80,9 @@
 
 <h3>Resources:</h3>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
+  <li>Vanilla JavaScript save canvas as an image</li>
   <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">Using Touch Events with HTML5 Canvas</a> by Ben Centra</li>
-  <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">HTML5 Canvas eraser tool without overdraw white color</a> from Stackoverflow</li>
+  <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">HTML5 Canvas eraser tool without overdraw white color</a> from Stackoverflow ⭐️FULL DISCLOSURE - I relied on the code from these last three resources heavily! I'm going to try to spend the last extra day of the hackathon really understanding it, and refactor so it fits my code more.</li>
   <li><a href="https://pixlr.com/x/">PIXLR Photo Editor</a></li>
   
 
