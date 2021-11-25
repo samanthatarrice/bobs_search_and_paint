@@ -153,7 +153,8 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
   <p>&#9744; Create loading screen with setTimeout so user can't see images loading</p>
   <p>&#9744; Add more animations to app and landing page (button)</p>
   <p>&#9744; Make canvas bigger on smaller screens</p>
-
+  <p>&#9744; Add fun facts about images in search bar when user hovers over</p>
+    
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
   <div align="center"><a href="https://linkedin.com/in/starrice" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="starrice" height="70" width="70" /></a></div>
