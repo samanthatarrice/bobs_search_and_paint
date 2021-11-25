@@ -164,7 +164,7 @@ function paint() {
     });
   });
 
-  //Declare eraser mode on click:
+  //Set eraser mode on click:
   eraseParts.addEventListener('click', () => { 
     mode = 'eraser';
     canvas.classList.add('eraser');
@@ -187,12 +187,14 @@ function paint() {
   function finishStroke() {
     isPainting = false;
     ctx.beginPath();
+    //resets path
   }
 
-  function resetStroke() {
-    isPainting = false;
-    ctx.beginPath();
-  }
+  // function resetStroke() {
+  //   isPainting = false;
+  //   ctx.beginPath();
+  // }
+    //Removed (see reseason below under mouse events)
 
   function draw(e) {
     if (!isPainting) return;
@@ -210,6 +212,7 @@ function paint() {
       ctx.globalCompositeOperation="destination-out";
       ctx.arc(e.offsetX,e.offsetY,8,0,Math.PI*2,false);
       ctx.fill();
+      //fills arc
     }
   }
 
@@ -217,7 +220,8 @@ function paint() {
   canvas.addEventListener('mousedown', startStroke);
   canvas.addEventListener('mouseup', finishStroke);
   canvas.addEventListener('mousemove', draw);
-  canvas.addEventListener('mouseout', resetStroke);
+  // canvas.addEventListener('mouseout', resetStroke);
+    //removed because it causes issues when user goes out of screen and touches the tv
 
   //Save Image:
   download.addEventListener('click', function() {
