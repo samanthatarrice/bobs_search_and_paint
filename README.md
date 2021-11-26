@@ -80,15 +80,13 @@
 
 <h3>Resources:</h3>
   <li><a href="https://pixlr.com/x/">PIXLR Photo Editor</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">MDN Canvas API (also see Guides & Tutorials at the bottom of the page</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">MDN Canvas API</a>(also see Guides & Tutorials at the bottom of the page)</li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Docs for Global Composite Operation Types</a></li>
-  <li><a href="https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa">Vanilla JavaScript save canvas as an image</a></li>
+  <li><a href="https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa">Vanilla JavaScript save canvas as an image</a> from dev.to</li>
   <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">Using Touch Events with HTML5 Canvas</a> by Ben Centra</li>
   <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">HTML5 Canvas eraser tool without overdraw white color</a> from Stackoverflow</li>
-  <li>⭐️FULL DISCLOSURE - I relied on the code from these last three resources heavily! I'm going to try to spend the last extra day of the hackathon really understanding it, and refactor so it fits my code more.</li>
+  <li>⭐️FULL DISCLOSURE - I can't take credit for the code related to touch events or downloading the drawings. I heavily relied on the code from these last three resources for this! I'm going to try to spend the last extra day of the hackathon really understanding it, and refactor so it fits my code more.</li>
   
-  
-
 <h3>Assets:</h3>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
   <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgevzoEcDsJI1eXtp29nSHZ3fafFAyBUqOg&usqp=CAU">Winter landscape with pink sky</a></li>
