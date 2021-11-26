@@ -5,7 +5,7 @@ const closePainting = document.querySelector('.close-painting');
 const bobVideo = document.querySelector('.bob-video');
 const searchInstructions = document.querySelector('.search-instructions');
 
-document.addEventListener("DOMContentLoaded", startup);
+document.addEventListener('DOMContentLoaded', startup);
 
 function startup() {
 
@@ -90,7 +90,7 @@ function paint() {
   const eraseAll = document.querySelector('.fa-trash');
   eraseAll.style.visibility = 'visible';
   const paintingContainer = document.querySelector('.painting-container')
-  paintingContainer.style.display = "block";
+  paintingContainer.style.display = 'block';
     //Display all pant tools
 
   //Darken background:
@@ -190,12 +190,6 @@ function paint() {
     //resets path
   }
 
-  // function resetStroke() {
-  //   isPainting = false;
-  //   ctx.beginPath();
-  // }
-    //Removed (see reseason below under mouse events)
-
   function draw(e) {
     if (!isPainting) return;
     ctx.lineWidth = userSize;
@@ -209,10 +203,9 @@ function paint() {
       ctx.stroke();
       ctx.moveTo(e.offsetX, e.offsetY);
     } else {
-      ctx.globalCompositeOperation="destination-out";
-      ctx.arc(e.offsetX,e.offsetY,8,0,Math.PI*2,false);
+      ctx.globalCompositeOperation='destination-out';
+      ctx.arc(e.offsetX,e.offsetY, 8, 0, Math.PI * 2, false);
       ctx.fill();
-      //fills arc
     }
   }
 
@@ -221,9 +214,10 @@ function paint() {
   canvas.addEventListener('mouseup', finishStroke);
   canvas.addEventListener('mousemove', draw);
   // canvas.addEventListener('mouseout', resetStroke);
-    //removed because it causes issues when user goes out of screen and touches the tv
+    //removed this and the fuction call above because it causes issues when user goes out of screen and touches the tv
 
   //Save Image:
+  //I CANNOT TAKE CREDIT FOR THIS CODE. It was taken from https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa
   download.addEventListener('click', function() {
     const link = document.createElement('a');
     link.download = 'download.png';
@@ -239,33 +233,37 @@ function paint() {
   });
 
   //Code for canvas touch events:
-    //Taken from: https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
+  //I CANNOT TAKE CREDIT FOR THIS CODE. It was taken from: https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
     //It works, but only on my iPad. However, when you change the screen size, the coordinates are off. It also doesn't work on my Android phone with this code:
 
   // Set up touch events for mobile, etc
-  canvas.addEventListener("touchstart", function (e) {
+  canvas.addEventListener('touchstart', function (e) {
     mousePos = getTouchPos(canvas, e);
+    //This function I understand
     var touch = e.touches[0];
-    var mouseEvent = new MouseEvent("mousedown", {
-    clientX: touch.clientX,
-    clientY: touch.clientY
+    var mouseEvent = new MouseEvent('mousedown', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
     });
+    //This I don't...I need to learn more about the new keyword
     canvas.dispatchEvent(mouseEvent);
-    //Need to reconcile mouseEvent since it isn't declared in my original code.
+    //I need to learn more about this .dispatchEvent() method
   }, false);
 
-  canvas.addEventListener("touchend", function (e) {
-    var mouseEvent = new MouseEvent("mouseup", {});
-    canvas.dispatchEvent(mouseEvent);
-    }, false);
-    canvas.addEventListener("touchmove", function (e) {
+  canvas.addEventListener('touchmove', function (e) {
     var touch = e.touches[0];
-    var mouseEvent = new MouseEvent("mousemove", {
-    clientX: touch.clientX,
-    clientY: touch.clientY
+    var mouseEvent = new MouseEvent('mousemove', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
     });
     canvas.dispatchEvent(mouseEvent);
-    }, false);
+  }, false);
+
+  canvas.addEventListener('touchend', function (e) {
+    var mouseEvent = new MouseEvent('mouseup', {});
+    canvas.dispatchEvent(mouseEvent);
+  }, false);
+
 
   // Get the position of a touch relative to the canvas
   function getTouchPos(canvasDom, touchEvent) {
@@ -277,23 +275,23 @@ function paint() {
   }
 
   // Prevent scrolling when touching the canvas
-  document.body.addEventListener("touchstart", function (e) {
+  document.body.addEventListener('touchstart', function (e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, { passive: false }); //Added this from Ben's code. From Stackoverflow
+  document.body.addEventListener('touchend', function (e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
   }, { passive: false });
-  document.body.addEventListener("touchend", function (e) {
-    if (e.target == canvas) {
-      e.preventDefault();
-    }
-  }, { passive: false });
-  document.body.addEventListener("touchmove", function (e) {
+  document.body.addEventListener('touchmove', function (e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
   }, { passive: false });
 
-  /*
+  /* This was working on my Androd, but only showing as dots. Also, not working at all on the iPad
   // FIRST ATTEMPT AT TOUCH EVENTS: Set up touch drawing: Unfortunately, not quite working yet (see notes below), but hope to get it working soon!
   let isTouching = false;
 
