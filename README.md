@@ -58,6 +58,7 @@
   <p align="center">👀 Check out my <a href="https://samanthatarrice.github.io/bob_landing_page/"><strong>Landing page</strong></a> to learn more!</p>
 
 <h3 align="center">Design:</h3>
+  <p align="center"><a href="https://www.figma.com/file/DkCu9Ii3VnvTaTrZhkAfs5/Bob's-Search-%26-Paint?node-id=0%3A1">Link to Figma design</a></p>
   <div align="center">
     <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/app-design.png" height="425">
     <img src="https://github.com/samanthatarrice/bobs_search_and_paint/blob/main/readme_images/landing-design.png" height="425">
@@ -85,7 +86,7 @@
   <li><a href="https://dev.to/dailydevtips1/vanilla-javascript-save-canvas-as-an-image-3pfa">Vanilla JavaScript save canvas as an image</a> from dev.to</li>
   <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">Using Touch Events with HTML5 Canvas</a> by Ben Centra</li>
   <li><a href="https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html">HTML5 Canvas eraser tool without overdraw white color</a> from Stackoverflow</li>
-  <li>⭐️FULL DISCLOSURE - I can't take credit for the code related to touch events or downloading the drawings. I heavily relied on the code from these last three resources for this! I'm going to try to spend the last extra day of the hackathon really understanding it, and refactor so it fits my code more.</li>
+  <li>⭐️FULL DISCLOSURE - I can't take credit for the code related to touch events or downloading the drawings. I heavily relied on the code from these last three resources for this! I tried to spend the final days of the Hackathon understanding it better, but I need more time. Hopefully I can come back to this later once I've leveled up in my skills to make this more of my own!</li>
   
 <h3>Assets:</h3>
   <li><a href="https://image.pbs.org/contentchannels/DQhaEaX-background-1U3qFyO.png?focalcrop=1200x630x50x10&format=auto">Background painting of snowy mountains and sunset</a></li>
