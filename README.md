@@ -154,6 +154,7 @@ https://user-images.githubusercontent.com/88330216/143303937-cb25c9d2-1efd-48dd-
   <p>&#9744; Make canvas bigger on smaller screens</p>
   <p>&#9744; Add fun facts about images in search bar when user hovers over</p>
   <p>&#9744; Fix meta tags for social media (seems to work on Instagram, but not Linkedin)</p>
+  <p>&#9744; Replace PNG images with SVG...possibly some that I create once I learn more!.</p>
     
 <h2 align="center">📧 Developer's Contact Info:</h2>
   <p align="center">Contact me through Linkedin:</p>
